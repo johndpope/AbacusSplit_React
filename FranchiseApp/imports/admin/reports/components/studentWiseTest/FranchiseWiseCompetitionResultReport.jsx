@@ -1,0 +1,385 @@
+import React, { Component } from 'react';
+import { render } from 'react-dom';
+import TrackerReact from 'meteor/ultimatejs:tracker-react';
+import { Meteor } from 'meteor/meteor';
+import ReactHTMLTableToExcel from 'react-html-table-to-excel';
+import { StudentMaster } from '/imports/admin/forms/student/api/studentMaster.js'; 
+import { CategoryMaster } from '/imports/admin/forms/addCategory/api/categoryMaster.js'; 
+// import { MyExamMaster } from '/imports/admin/forms/student/api/myExamMaster.js';
+import {FranchiseDetails} from '/imports/admin/companySetting/api/CompanySettingMaster.js';
+
+
+export default class FranchiseWiseCompetitionResultReport extends TrackerReact(Component) {
+
+	
+	constructor(){
+		super();
+		this.state ={
+			competitionId : '',
+			categoryName  : 'A',
+			subCategory: 'A1',
+			studentNameCWTM :'',
+			franchiseId:'',
+			franchise:'',
+			allCategoryWiseStudent: [],
+			allCompetitions : [],
+			allFranchiseData : [],
+			
+			"subscription" : {
+				"CategoryCollection" : Meteor.subscribe("allCategory"),				
+			}
+		}
+		this.handleChange = this.handleChange.bind(this);
+		this.getFranchiseId = this.getFranchiseId.bind(this);
+		this.getSWTMTextValue = this.getSWTMTextValue.bind(this);
+	}
+
+	
+
+	componentDidMount(){
+		this.studWiseTestMonthlyData();
+		Meteor.call("allCompetitions",(err,res)=>{
+			if(err){}else{
+		 		this.setState({
+		 			allCompetitions : res,
+		 		});
+	 		}
+		});
+
+		Meteor.call("allFranchiseData",(err,res)=>{
+			if(err){}else{
+		 		this.setState({
+		 			allFranchiseData : res,
+		 		});
+	 		}
+		});
+	}
+
+
+	handleChange(event) {
+	    const target = event.target;
+	    const name = target.name;
+
+	    this.setState({
+	      [name]: event.target.value
+	    });		
+	}
+
+	showCategories(){
+		return CategoryMaster.find({}).fetch();	
+	}
+	getFranchiseId(event){
+		var franchiseId = $("#franchiseId option:selected").attr('id');
+		
+		if(franchiseId){
+			this.setState({
+				franchiseId : franchiseId,
+		}
+		,()=>{this.studWiseTestMonthlyData()});
+			}
+	}
+
+	getCompetitionId(event){
+		var competitionId = $("#competitionId option:selected").attr("id");
+		this.setState({
+			competitionId : competitionId,
+		},()=>{this.studWiseTestMonthlyData()})
+	}
+
+	// getFranchiseId(event){
+	// 	var franchiseId = $("#franchiseId option:selected").attr("id");
+	// 	this.setState({
+	// 		franchiseId : franchiseId,
+	// 	},()=>{this.studWiseTestMonthlyData()})
+	// }
+
+  	getCategoryName(event){
+		var categorySubName = $(event.target).val();
+		this.setState({
+			categoryName : categorySubName,
+		},()=>{this.studWiseTestMonthlyData()});
+		
+	}
+	getSubCategoryName(event){
+		var categorySubName = $(event.target).val();
+		this.setState({
+			subCategory : categorySubName,
+		},()=>{this.studWiseTestMonthlyData()});
+		
+	}
+
+  	SubCategoryName(event){
+		var categoryName = this.state.categoryName;
+		var	signleCategory = CategoryMaster.findOne({"categoryName":categoryName});
+		if(signleCategory){
+			var subCategoryarray = signleCategory.levels;
+			var subCatarray =[];
+			for(var i=0; i<subCategoryarray.length;i++){
+				var subCat = categoryName+''+parseInt(i+1);
+				var subCat = String(subCat);
+				subCatarray.push(
+					<option key={i}>{subCat}</option>
+					);
+			}
+			return subCatarray;
+		}else{
+			return [];
+		}
+	}
+
+	showhideSubCatDetails(event){
+		$('.categoryListDataStud').toggleClass('categoryListDataStudshow');
+	}
+
+	studWiseTestMonthlyData(){
+		// console.log("dt--->",this.state.categoryName,this.state.subCategory,this.state.competitionId,this.state.franchiseId);
+			if(!this.state.studentNameCWTM){
+				Meteor.call("getFranchisewiseCompetitionResult",this.state.categoryName,this.state.subCategory,this.state.competitionId,this.state.franchiseId,
+					(err,res)=>{
+					if(err){
+						console.log(err);
+					}else{
+						if(res){
+							// console.log("res",res);
+							this.setState({
+								allCategoryWiseStudent : res,
+							});
+					}else{
+							$('.addLoadinginRepo').html("Reports are loading please wait...")
+						}
+					}
+				});
+			}else{
+				Meteor.call("getFranchisewiseCompetitionResultSearch",this.state.categoryName,this.state.studentNameCWTM,this.state.franchiseId,this.state.competitionId,
+					(err,res)=>{
+						if(err){
+							console.log(err);
+						}else{
+							if(res){
+								this.setState({
+									allCategoryWiseStudent : res,
+								});
+							}else{
+								$('.addLoadinginRepo').html("Reports are loading please wait...")
+							}
+						}
+					});
+			}
+	}
+
+	buildRegExp(searchText) {
+	   var words = searchText.trim().split(/[ \-\:]+/);
+	   var exps = _.map(words, function(word) {
+	      return "(?=.*" + word + ")";
+	   });
+
+	   var fullExp = exps.join('') + ".+";
+	   return new RegExp(fullExp, "i");
+	}
+
+	getSWTMTextValue(event){
+		var studentName= $('.SearchStudentCWTMName').val();
+		if(studentName){
+			var RegExpBuildValue = this.buildRegExp(studentName);
+			this.setState({
+				studentNameCWTM : RegExpBuildValue,
+			},()=>{this.studWiseTestMonthlyData()});
+		}else{
+			this.setState({
+				studentNameCWTM : '',
+			},()=>{this.studWiseTestMonthlyData()});
+		}
+	}
+
+	getFranchiseName(studentId){
+		var postHandle = Meteor.subscribe("LoginInStudent",studentId).ready();
+		if(postHandle){
+			var studData = StudentMaster.findOne({"studentId":studentId});	
+			if(studData){		
+				return studData.franchiseName;
+			}
+		}
+		
+	}
+
+	render() {
+		// console.log("allCategoryWiseStudent",this.state.allCategoryWiseStudent);
+	       return (
+	       	<div>
+	        {/* Content Wrapper. Contains page content */}
+	        <div className="content-wrapper">
+	          <section className="">
+	            <div className="row">
+	              <div className="col-md-12">
+	               <section className="content-header">
+		            <h1>Reports</h1>
+		           </section>
+		           <section className="content viewContent">
+		            <div className="row">
+		              <div className="col-lg-12 col-md-12 col-xs-12 col-sm-12">
+		                <div className="box">
+		                  <div className="box-header with-border boxMinHeight">
+		                    <div className="box-header with-border">
+					           	<h3 className="box-title">Franchise wise and Competiton wise Result</h3>
+					        </div>
+						<div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 selectCatSubCatListt paddingleftzero tableAlignment">
+							<div className="col-lg-5  col-md-5 col-sm-5 col-xs-12 franReport">
+								<span className="blocking-span"> 
+									<select type="text" name="competitionId" ref="competitionId"  id="competitionId" onClick={this.getCompetitionId.bind(this)} onChange={this.handleChange} className="form-control col-lg-12 col-md-12 col-sm-12 col-xs-12 inputText" autoComplete="off" title="Please select Category" required>
+										<option value="">-- Select Competition --</option>
+										{this.state.allCompetitions.map((competition,index)=>{
+											return <option key={index} id={competition._id}>{competition.competitionName}</option>
+										  })
+										}
+									</select>
+									<span className="floating-label floating-label-Date">Select Competition</span>					   								   			
+								</span>
+							</div>
+
+							<div className="col-lg-3  col-md-3 col-sm-3 col-xs-12 ">
+								<span className="blocking-span"> 
+									<select type="text" name="franchiseId" ref="franchiseId"  id="franchiseId" onClick={this.getFranchiseId.bind(this)} onChange={this.handleChange} className="form-control col-lg-12 col-md-12 col-sm-12 col-xs-12 inputText" autoComplete="off" title="Please select Category" required>
+										<option value="">-- Select Franchise --</option>
+										{this.state.allFranchiseData.map((franchise,index)=>{
+											return <option key={index} id={franchise.franchiseCodeForCompanyId}>{franchise.franchiseName}</option>
+										  })
+										}
+									</select>
+									<span className="floating-label floating-label-Date">Select Franchise</span>					   								   			
+								</span>
+							</div>
+
+							<div className="col-lg-2 col-md-2 col-sm-2 col-xs-6">
+								<span className="blocking-span"> 
+									<select type="text" name="categoryName" ref="categoryName" value={this.state.categoryName} onClick={this.getCategoryName.bind(this)} onChange={this.handleChange} className="form-control col-lg-12 col-md-12 col-sm-12 col-xs-12 inputText" autoComplete="off" title="Please select Category" required>
+										<option disabled value="">-- Select Category --</option>
+										<option value="all" id="all">ALL</option>
+										{this.showCategories().map((categories,index)=>{
+											return <option key={index}>{categories.categoryName}</option>
+										  })
+										}
+									</select>
+									<span className="floating-label floating-label-Date">Select Category</span>					   								   			
+								</span>
+							</div>
+
+							<div className="col-lg-2 col-md-2 col-sm-2 col-xs-6">
+								<span className="helpSecSR" title="Help" onClick={this.showhideSubCatDetails.bind(this)} ><i className="fa fa-question-circle"></i></span>
+								<div className="categoryListDataStud categoryListDataStudshoww">
+									<label>A1/B1/C1/D1</label> : Below 7 year<br/>
+									<label>A2/B2/C2/D2</label> : 7-9 year<br/>
+									<label>A3/B3/C3/D3</label> : 9-11 year<br/>
+									<label>A4/B4/C4/D4</label> : 11-14 year<br/>
+								</div>
+								<span className="blocking-span"> 
+									<select type="text" name="subCategory" ref="subCategory" value={this.state.subCategory} onClick={this.getSubCategoryName.bind(this)}className="form-control subCatTab col-lg-12 col-md-12 col-sm-12 col-xs-12 inputText" onChange={this.handleChange.bind(this)} required>
+										<option value="">-- Select Sub Category --</option>
+										<option value="all" id="all">ALL</option>
+										{this.SubCategoryName()}
+									</select>
+									<span className="floating-label floating-label-Date">Select Sub Category</span>					   			
+								</span>
+							</div>
+						</div>
+
+						<div className="col-lg-12  col-md-12  col-sm-12 col-xs-12">
+				       		<span className="blocking-span">
+				           		<input type="text" name="search"  className="col-lg-5 col-md-5 col-sm-5 SearchExam SearchStudentCWTMName inputTextSearch" placeholder="Search Student Name" onInput={this.getSWTMTextValue.bind(this)} required/>
+				           		
+				       		</span>
+				        </div>
+						<h4 className="col-lg-12 col-md-12 reportTitle text-center">
+						{ this.state.allCategoryWiseStudent.length != 0 ?
+				         <ReactHTMLTableToExcel
+			                    id="test-table-xls-button"
+			                    className="pull-right dwnldAsExcel fa fa-download download-table-xls-button btn report-list-downloadXLXS execlDlIcon"
+			                    table="monthlyStudWiseTest"
+			                    filename="MonthlyStudWiseTest"
+			                    sheet="tablexls"
+			                    buttonText=""/>
+
+			                    :
+
+			                <div className="pull-right"></div>
+			        	}
+						</h4>
+						<form className="todaysSalesReport">
+							<div>
+								<div className="break col-lg-12 col-md-12"></div>
+									
+									<div className="table-responsive col-lg-12">
+									<table className="table table-striped  table-hover table-bordered reportTables" id="monthlyStudWiseTest">
+										<thead>
+											<tr className="tableHeader myAllTable">
+												<th className="tab-Table">Sr. No</th>
+												<th> Student Name </th>
+												<th> Competition Name </th>
+												<th className="tab-Table">Total Questions</th>
+												<th className="tab-Table">Attempted</th>
+												{/*<th className="tab-Table">Correct Ques</th>*/}
+												{/*<th className="tab-Table">Wrong Ques </th>*/}
+												{ this.state.allCategoryWiseStudent.length != 0 ?
+													this.state.categoryName=="all" || this.state.subCategory=="all"?
+														<th className="tab-Table">Marks</th>
+														:
+														<th className="tab-Table">Marks out of({this.state.allCategoryWiseStudent[0].totalMarks})</th>																								
+													:
+													<th className="tab-Table">Marks</th>
+												}
+												<th className="tab-Table">Time (mm:ss) </th>
+												<th className="tab-Table">Status</th>
+												<th className="tab-Table">Rank</th>
+
+											</tr>
+										</thead>
+										{ this.state.allCategoryWiseStudent.length != 0 ?
+										<tbody className="myAllTable">
+											{/*{this.studWiseTestMonthlyData()}*/}
+											{this.state.allCategoryWiseStudent.map((allStudent,index)=>{
+											return <tr key={index} className={"rank"+allStudent.rank}>
+												<td className="tab-Table"></td>
+												{/*<td><a href={/StudentInformations/+allStudent.StudentId}>{allStudent.firstName} {allStudent.lastName}</a>*/}
+												<td><a className="studentbluelabel" href={/StudentInformations/+allStudent.StudentId}>{allStudent.firstName} {allStudent.lastName}</a>
+													{/*<div className="franchName">{this.getFranchiseName(allStudent.StudentId)}</div>*/}
+												</td>
+												<td >{allStudent.competitionName}</td>
+												<td className="tab-Table">{allStudent.totalQuestion}</td>
+												<td className="tab-Table">{allStudent.attemptedQues}</td>
+												{/*<td className="tab-Table">{allStudent.correctAnswer}</td>*/}
+												{/*<td className="tab-Table">{allStudent.wrongAnswer}</td>*/}
+												<td className="tab-Table">{allStudent.totalScore}</td>
+												<td className="tab-Table"> {allStudent.examSolvedTime}  </td>
+												<td className="tab-Table">{allStudent.status}</td>
+												<td className="tab-Table">{allStudent.rank !="Consolation" && (allStudent.rank=='1st' || allStudent.rank=='2nd' || allStudent.rank=='3rd') ? <span>{allStudent.rank}  <i className ={"fa fa-trophy trofy" +allStudent.rank} aria-hidden="true"></i></span> : <span>{allStudent.rank}</span>}</td>
+												
+											</tr>
+											})}
+										</tbody>
+									:
+										<tbody>
+											<tr>
+												<td colSpan="9" className="tab-Table">Nothing to display.</td>
+											</tr>
+										</tbody>
+										
+									}
+									</table>
+									</div>
+								</div>
+						    </form>
+						</div>
+				      </div>
+				    </div>
+		           </div>
+			     </section>
+			    </div>
+			   </div>
+		      </section>
+		   </div>
+	    </div>
+
+		);
+		
+	} 
+
+}

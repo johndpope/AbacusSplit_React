@@ -1,0 +1,163 @@
+.RRNProfileMenu{
+	background: #54Aff3;
+    margin-top: 10px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0%;
+    padding-bottom: 0%;
+    position: fixed;
+    bottom: 0px;
+    cursor: pointer;
+    z-index: 5;
+}
+
+.profileMenuItem:hover{
+    background: #006699;
+}
+.profileMenuItem{
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+.profileMenuIcon{
+	color: #efefef ;
+	font-size: 20px !important;
+	text-align: center;
+}
+.profileMenuTit{
+	font-size: 12px;
+    text-align: center;
+    color: #ddd;
+}
+.aboutOwnerTit, .aboutOwnerDetails{
+	margin-top: 4px;
+}
+.aboutOwnerDetails{
+	color: #666;
+}
+.serviceBTN{
+	border-radius: 0px;
+    float: right;
+    margin-right: 15px;
+    margin-bottom: 10px;
+}
+.navBar{
+    margin-bottom: 0;
+}
+
+.spotylTopMenuBar{
+    background: #54Aff3;
+    border: 0;
+    font-weight: 100;
+}
+
+.spotylBrand{
+    color:#fff !important;
+    text-align: center;
+}
+
+.navBarToggle{
+    background: none !important;
+}
+
+.navBarNav{
+    background: #fff;
+    margin-top: 0;
+    margin-bottom: 0;
+    /*padding: 0% 7%;*/
+    color: #222;
+}
+
+.navBarNav li{
+    /*border-bottom: 1px solid #333;*/
+   padding: 3% 9%;
+   font-size: 17px;
+}
+
+.navBarNav li a{
+    color: #666 !important;
+    border-bottom: 1px solid #333;
+}
+
+.navBarCollapse{
+    border: 0;
+    position: absolute;
+    z-index: 6;
+    box-shadow: rgb(51, 51, 51) 0px 0px 5px;
+    margin-right: 15px !important;
+}
+
+.navBarToggle .icon-bar {
+  /*width: 22px;*/
+  transition: all 0.2s;
+}
+.navBarToggle .top-bar {
+  transform: rotate(45deg);
+  transform-origin: 10% 10%;
+}
+.navBarToggle .middle-bar {
+  opacity: 0 ;
+}
+.navBarToggle .bottom-bar {
+  transform: rotate(-45deg);
+  transform-origin: 10% 90%;
+}
+.navBarToggle.collapsed .top-bar {
+  transform: rotate(0) ;
+}
+.navBarToggle.collapsed .middle-bar {
+  opacity: 1;
+}
+.navBarToggle.collapsed .bottom-bar {
+  transform: rotate(0);
+}
+
+body{
+/*    filter: alpha(opacity=50);
+    opacity: .5;
+    background: rgba(0, 0, 0, 0.71);;
+    -webkit-transition: opacity .15s linear;
+    -o-transition: opacity .15s linear;
+    transition: opacity .15s linear;*/
+}
+
+.myProfilePicDataBkgrd{
+    border: 0 !important;
+    font-weight: 100;
+    font-size: 18px !important;
+}
+
+.noLRPad{
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+}
+
+.profilePic{
+    border-radius: 100%;
+}
+
+.myProfilePicDataBkgrd{
+    background: #fafafa; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(top bottom, #fafafa , #fff); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(top bottom, #fafafa, #fff); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(top bottom, #fafafa, #fff); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to top bottom, #fafafa , #fff); /* Standard syntax */
+
+    /* Safari 4-5, Chrome 1-9 */
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fafafa), to(#fff));
+
+    /* Safari 5.1, Chrome 10+ */
+    background: -webkit-linear-gradient(bottom, #eee, #fff);
+
+    /* Firefox 3.6+ */
+    background: -moz-linear-gradient(bottom, #eee, #fff);
+
+    /* IE 10 */
+    background: -ms-linear-gradient(bottom, #eee, #fff);
+
+    /* Opera 11.10+ */
+    background: -o-linear-gradient(bottom, #eee, #fff);
+}
+
+.myprofileInfo{
+    margin-top: 5%;
+}

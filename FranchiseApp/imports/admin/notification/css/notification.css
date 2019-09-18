@@ -1,0 +1,713 @@
+.NotificationContent {
+  min-height: 600px;
+  /*padding: 15px;*/
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.reportTitleName{
+    text-align: center;
+    color: #3c8dbc;
+}
+
+.TableHeader{
+    background: #3c8dbc;
+    color: #fff;
+}
+
+.inputValid{
+    height: 35px;
+}
+
+.inputValid:valid {
+    border: 1px solid #ccc;
+}
+
+
+.inputrow{
+    margin-bottom: 1%;
+}
+
+.inputrow1{
+    margin-bottom: 4%;
+    margin-top: 4%;
+}
+
+.NOpadding{
+    padding: 0px !important;
+}
+
+.notifTab{
+    text-align: center;
+}
+/*
+.notifWrapper{
+	width: 100%;
+	height: auto;
+	margin: auto;
+	border-top: 3px solid #DA2128;
+	box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.1);
+	border-radius: 3px;
+	margin-left: 0 !important;
+	padding: 3%;
+	background: #fff !important;
+	margin-bottom: 2%;
+}*/
+.notifWrapper{
+    height: auto;
+    border-radius: 3px;
+    margin-left: 0 !important;
+    background: #fff !important;
+    margin-top: 5%;
+    margin-bottom: 7%;
+}
+.hideDiv{
+    visibility: hidden;
+}
+.notifWrapper .title{
+    text-align: center !important;
+    font-size: 25px;
+    color: #333;
+    margin: 2% 0% !important;
+}
+.notificationTitle{
+	text-align: center;
+    color: #DA2128;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.text-message-content-wrapper{
+    height: auto;
+    padding: 1%;
+    background: #AED6F1;
+}
+.text-message-innerWrapper{
+    height: auto;
+    padding: 2%;
+    background: #ffffff;
+}
+.toLabeldiv{
+    height: 54px;
+    text-align: center;
+    font-size: 13px;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+}
+.tolabel{
+    text-align: center;
+    margin-top: 18px;
+    font-weight: bold;
+    font-size: 13px;
+    font-family: 'poppins',sans-Serif;
+}
+.fixlength{
+    color: #1B4F72;
+    font-family: sans-serif;
+    margin-top: 5px;
+}
+#textarea{
+    border-radius: 0px;
+    border-color: #aaa;
+    border-radius: 4px;
+}
+#textarea_feedback{
+    color: #1B4F72;
+    font-family: sans-serif;
+    margin-top: -19px;
+}
+.senderTxtarea{
+    border-radius: 0px;
+    border-color: #aaa;
+    border-radius: 4px; 
+}
+.sendtxtmsgbtn{
+    border-radius: 0px;
+}
+.create-email-template-wrapper{
+    height: auto;
+    padding: 1.3%;
+    /*border: 5px solid #3c8dbc;*/
+    margin-bottom: 5%;
+}
+.sidertemplatebar{
+    height: auto;
+    min-height: 295px;
+    border-right: 5px solid #3c8dbc;
+    padding-top: 1%;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.saveTemplateWrapper{
+    height: auto;
+    min-height: 200px;
+    background: #fff;
+    padding: 1.3%;
+    /*border: 2px solid #3c8dbc  ;*/
+}
+.ViewTemplateWrapper1{
+    height: 600px;
+    background: rgba(179,220,237,1);
+    padding: 1.3%;
+    border: 7px solid #3c8dbc  ;
+    display: none;
+}
+
+.ViewNotifTemplateWrapper1{
+    height: 600px;
+    background: rgba(179,220,237,1);
+    padding: 1.3%;
+    border: 7px solid #3c8dbc  ;
+    display: none; 
+}
+
+.notificationTemplateWrapper{
+    display: none;
+    height: 600px;
+    background: #fff;
+    padding: 1.3%;
+    border: 7px solid #3c8dbc  ;
+
+}
+
+.userDefinedTemplateWrapper{
+    display: none;
+}
+.newTemplate{
+    background: #3c8dbc;
+    height: 50px;
+    padding: 5%;
+    text-align: center;
+    width: 93%;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 2%;
+}
+.notificationTemplate{
+    background: #3c8dbc;
+    height: 50px;
+    padding: 5%;
+    text-align: center;
+    width: 93%;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 2%;
+}
+.smsTemplate{
+    background: #3c8dbc;
+    height: 50px;
+    padding: 5%;
+    text-align: center;
+    width: 93%;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 2%;
+}
+
+.tempCategory{
+    
+    background: #3c8dbc;
+    height: 50px;
+    padding: 5%;
+    text-align: center;
+    width: 95%;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 2%;
+}
+
+.tempCategoryName{
+    padding: 5%;
+    height: 50px;
+    cursor: pointer;
+}
+
+.tempCategory a{
+    color: #fff !important;
+}
+
+.tempactive{
+	background:#8FBC8F!important;
+    width: 100% !important;
+}
+
+
+#emailTemplates{
+    margin-top: 5%;
+    height: auto;
+    min-height: 300px;
+    border:5px solid #3c8dbc;
+}
+
+#notificationTemplates{
+    margin-top: 5%;
+    height: auto;
+    min-height: 300px;
+    border:5px solid #3c8dbc;
+}
+
+#smsTemplates{
+    margin-top: 5%;
+    height: auto;
+    min-height: 300px;
+    border:5px solid #3c8dbc;
+}
+
+@media (max-width: 767px) {
+  .notifWrapper{
+    padding: 0 !important;
+  }
+
+  .notifTabs{
+    padding: 0 !important;
+  }
+
+  .notifTab{
+    padding: 0 !important;
+  }
+
+  .tabContentStyle{
+    margin-top: 15% !important;
+  }
+
+  /*.tempactive::before {
+    content: '';
+    position: absolute;
+    left: 91%;
+    border-left: 16px solid #3c8dbc;
+    border-top: 24px solid transparent;
+    border-bottom: 17px solid transparent;
+    margin-top: -10%;
+    display: block;
+  }*/
+
+  .sidertemplatebar {
+    height: auto;
+    min-height: 0px !important; 
+    border-right: 0px solid #3c8dbc; 
+    padding-top: 1%;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    overflow-x: hidden;
+    overflow-y: auto;
+ }
+  #emailTemplates {
+    margin-top: 5%;
+    height: auto;
+    min-height: 300px;
+    border: 0px solid #3c8dbc; 
+ }
+ #notificationTemplates {
+    margin-top: 5%;
+    height: auto;
+    min-height: 300px;
+    border: 0px solid #3c8dbc; 
+ }
+ #smsTemplates {
+    margin-top: 5%;
+    height: auto;
+    min-height: 300px;
+    border: 0px solid #3c8dbc; 
+ }
+ .fa-hand-o-left:before {
+    content: "\f0a6";
+ }
+ .templateLibraryHeader {
+    padding: 2%;
+    /* margin-top: 10px; */
+    font-weight: bold;
+    font-size: 13px;
+    text-align: center;
+    cursor: pointer !important;
+    background: rgba(204, 204, 204, 0.14);
+}
+}
+
+.savetemp b{
+    margin-left:3px;
+     font-size: 13px;
+}
+.input-category{
+    width: 100%;
+    height: 35px;
+    border-radius: 2px;
+    border :1px solid #aaa;
+    padding: 4px;
+}
+.label-category{
+    color: #111;
+    padding: 0px;
+    font-size: 13px;
+}
+.headercreatetemplate{
+    font-size: 15px;
+    color: #ffffff;
+}
+.savetemp{
+    margin-top: 10px;
+}
+.category-check{
+  height: 16px;
+  width: 16px;  
+}
+
+.labelWrapper{
+    height: auto;
+    background: #ffffff;
+    box-shadow: 0px 0px 10px #999;
+    padding: 2%;
+
+}
+.labelcontactsHeader{
+    text-align: center;
+    font-size: 15px;
+    font-family: sans-serif;
+}
+.labelContainer{
+    margin-top: 10px;
+}
+.filesymbol{
+
+}
+.filesymbol li{
+  list-style: none;
+  float: left;
+  margin-left: 10px;
+  cursor: pointer;
+  margin-top: -21px;
+}
+.labelContainer{
+    height: auto;
+    padding: 2%;
+    border: 1px solid #aaa;
+    text-align: center;
+    margin-top: 0px;
+}
+.createLabelContainer{
+    padding: 9px;
+}
+.createlabel-label{
+    font-size: 14px;
+    font-family: sans-serif;
+    color: #616A6B  ;
+}
+.createlabel-label1{
+     font-size: 13px;
+    font-weight: normal;
+    font-family: sans-serif;
+    color: #616A6B;
+
+}
+.email-template-wrapper{
+    height: auto;
+    padding: 0px !important;
+    border: 5px solid #ccc;
+}
+.sidebarAllTemplate{
+    height: 561px;
+    background: #ffffff;
+    border-right: 7px solid #ccc;
+    padding: 1%;
+}
+.emailbodyWrapper{
+    height: 561px;
+    background: #fff;
+    padding: 2%;
+    border: 7px solid #2574A9  ;
+}
+.toemaildiv{
+    height: 54px;
+    text-align: center;
+    border-radius: 4px;
+}
+.senderTxtarea1{
+    border-radius: 3px;
+    border-color: #aaa;
+}
+.senderccInput{
+    width: 100%;
+    border-radius: 3px;
+    border: 1px solid #aaa;
+    height: 30px;
+    padding: 4px;
+}
+.toccdiv{
+    height: 30px;
+    width: 100%;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.alllabel{
+    text-align: center;
+    margin-top: 7px;
+    font-weight: bold;
+    font-size: 13px;
+    font-family: 'poppins',sans-Serif;
+}
+.sendemailbtn{
+    border-radius: 0px;
+    margin-top: 10px;
+}
+.templateLibrary{
+    padding:0px;
+
+}
+.templateLibrary ul{
+    padding: 0px;
+}
+.templateLibrary ul li{
+    list-style: none;
+    height: 40px;
+    background: linear-gradient(to bottom,#e1e5f1 ,#bfc2cb);
+    width : 93%;
+    text-align: center;
+    color: #000;
+}
+.tempCategory{
+    background: #3c8dbc;
+    height: 40px;
+    padding: 3%;
+    text-align: center;
+    width: 100%;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 2%;
+    font-size: 16px;
+    font-weight: bold;
+}
+.templateLibrary ul li a{
+    text-decoration: none;
+    color: #444 !important;
+    font-size: 13px;
+    font-family: sans-serif;
+}
+.templateLibrary ul li:hover{
+    background: linear-gradient(to bottom, #bfc2cb, #dadde7, #bfc2cb);
+}
+.templateLibraryHeader{
+    padding: 2%;
+    /*margin-top: 10px;*/
+    font-weight: bold;
+    font-size: 13px;
+    text-align: center;
+}
+
+.library-submenu li{
+    /*height: 40px;
+    width: 100%;
+    background : linear-gradient(to bottom, #707B7C,  #AEB6BF  , #707B7C);*/
+    background: rgba(143,181,214,1);
+    height: 50px;
+    padding: 2%;
+    text-align: center;
+    width: 93%;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 2%;
+
+}
+
+.editTemp a{
+    color: #000;
+}
+
+.checkMail span.glyphicon {               
+    opacity: 0;             
+}
+.checkMail.active span.glyphicon {                
+    opacity: 1;             
+}
+.checkMail{
+    border: 1px solid #eee;
+}
+
+.messageContent{
+    height: 280px;
+    background: #fff;
+    overflow-y: scroll;
+}
+
+.statusColor{
+    background: #00c0ef;
+}
+
+.notifmenu{
+    font-size: 12px;
+}
+.notifFooter{
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    font-size: 12px;
+    /*background-color: #fff;*/
+    padding: 7px 10px !important;
+    border-bottom: 1px solid #eeeeee;
+    color: #fff !important;
+    text-align: center;
+}
+.notifFooter a{
+    color: #fff !important;
+}
+.notifSpan{
+    padding: 0px !important;
+}
+.notifSpan li{
+    list-style: none;
+    font-size: 12px
+}
+
+.notifSpan{
+    padding: 0px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.notifContent{
+    color: #fff;
+    padding: 1%;
+    display: block;
+    white-space: nowrap;
+    
+
+}
+
+.innerNotifLi{
+    margin-bottom: 1%;
+    /*border-bottom: 1px solid #f4f4f4;*/
+}
+
+.notif1{
+    text-align: left;
+    font-size: 12px !important;
+}
+
+.notif2{
+    font-size: 10px !important;
+}
+
+.notiful{
+    padding: 0px;
+    top: 100%;
+    left: 0;
+    float: left;
+    min-height: 335px;
+    margin: 2px 0 0;
+    font-size: 14px;
+    text-align: left;
+    list-style: none;
+    color: #fff;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+    box-shadow: 0 6px 12px rgba(0,0,0,.175);
+    /*overflow-y: scroll;*/
+}
+
+.notiful li{
+    padding: 0px;
+    color: #fff;
+   border-bottom: 1px solid #f4f4f4; 
+}
+
+.notiful li:hover{
+    background-color: #777;
+    color: #fff;
+}
+.notiful li a{
+    color: #fff;
+}
+
+.submitConfig{
+    padding: 0;
+    margin: 3px 0 0;
+    width: 81%;
+    background: #f89b1c;
+    color: #fff;
+    font-size: 15px;
+    height: 38px;
+    border: 0;
+    border-radius: 0;
+}
+
+.notificationFooter a{
+    background: #fff;
+    text-align: center;
+}
+
+.notificationheader{
+    background: #fff;
+    text-align: center;
+}
+
+.notifbody{
+    font-size: 12px;
+}
+
+.notifdate{
+    font-size: 10px;
+}
+
+.notifvalMenu{
+    max-height: 200px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow-x: hidden;
+}
+
+.notif-dropdown{
+    width: 280px;
+    padding: 0 0 0 0;
+    margin: 0;
+    top: 100%;
+    border: 0px !important;
+}
+
+.tabContentStyle{
+    margin-top: 10%;
+}
+
+.defaultMsg{
+    color: #ccc;
+    text-align: center;
+    margin-top: 15%;
+}
+
+.defaultMsg i{
+    font-size: 24px;
+}
+.updatebtn{
+    display: none;
+}
+
+.showTemplate{
+    height: 242px;
+    overflow-y: scroll;
+}
+
+.noBorderBox{
+    border: 0px !important;
+}
+.contentBox{
+    border: 1px solid #ccc;
+    padding: 2%;
+}
+
+.notesnsub h4 img{
+    height:50px!important;
+}

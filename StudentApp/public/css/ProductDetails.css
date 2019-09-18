@@ -1,0 +1,217 @@
+/*Defaul classes needed*/
+.prod-detail-main {
+    margin-top: 8%;
+    margin-bottom: 8%;
+    background: #FFF;
+    padding-top: 10px;
+}
+
+.img-responsiveProduct  {
+    height: 450px;
+    overflow: hidden;
+    width: 100%;
+    /* height: 100%; */
+}
+
+.prod-detail-indvImgOl li {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    overflow: hidden;
+    cursor: pointer;
+
+    border: 1px solid #ccc;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+.prod-detail-indvImgOl {
+    margin-bottom: 0px;
+}
+/*Defaul classes needed*/
+/*=================================================================
+=================================================================
+=================================================================*/
+.prod-detail-slider {
+    border: 2px solid #ccc;
+}
+.prod-detail-thumbimg {
+    border: 1px solid #ccc;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.prod-detail-headerText {
+    color: #444;
+    margin-top: 0;
+}
+
+.prod-detail-secondTitle {
+    font-size: 15px;
+    color: #444;
+}
+
+.prod-detail-shortDesc {
+    font-size: 14px;
+    color: #444;
+    border-bottom: 2px dashed #ccc;
+    border-top: 2px dashed #ccc;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.prod-detail-dimSel {
+    padding: 5px 20px;
+    background: #444;
+    display: inline-block;
+    color: #fff;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.prod-detail-selectionFilters {
+    border: 1px solid #ccc;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flow-root;
+}
+.prod-detail-prodDetail {
+    margin-top: 10px;
+    display: flow-root;
+}
+.prod-detailPrcComm {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.prod-detailImg {
+    overflow: hidden;
+}
+.prod-detailPhoto {
+    width: 100%;
+    height: 100%;
+}
+.prod-detailPriceTitle{
+    color: #444;
+    margin-bottom: 5px;
+}
+
+.prod-detailPrc1 {
+    text-decoration: line-through;
+}
+.prod-detailPrcDiscnt {
+    color: #a94442;
+    background-color: #f2dede;
+    border-color: #ebccd1;
+    padding: 0px 5px;
+}
+.prod-detail-qntyComm {
+    padding: 1px 5px;
+    color: #444;
+    display: inline-block;
+}
+.prod-detail-qntyDec, .prod-detail-qntyInc {
+     background: #ccc;
+     cursor: pointer;
+     
+}
+.prod-detail-qntyTitle {
+    color: #444;
+    margin-bottom: 5px;
+}
+.prod-detail-note {
+    margin: 10px 0px;
+}
+.prod-detail-noteDesc {
+    color: #444;
+}
+.prod-detail-CartBtn {
+    background: #4CAF50;
+    color: #fff;
+    border: 1px solid #4CAF50;
+
+    -webkit-transition: border 0.5s,color 0.5s,background 0.5s;
+    transition:  border 0.5s,color 0.5s,background 0.5s;
+}
+.prod-detail-CartBtn:hover {
+    background: #444;
+    color: #eee;
+    border: 1px solid #ccc;
+}
+.prod-detail-suggnt {
+    display: flow-root;
+    border: 1px solid #ccc;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.prod-detail-suggntCartBtn {
+    background: #4CAF50;
+    color: #fff;
+    border: 1px solid #4CAF50;
+
+    -webkit-transition: border 0.5s,color 0.5s,background 0.5s;
+    transition:  border 0.5s,color 0.5s,background 0.5s;
+}
+.prod-detail-suggntCartBtn:hover {
+    background: #444;
+    color: #eee;
+    border: 1px solid #ccc;
+}
+
+.prod-detail-suggntDesc {
+    color: #444;
+}
+
+.prod-detail-qntySggnComm {
+    padding: 1px 5px;
+    color: #444;
+    display: inline-block;
+}
+.prod-detail-qntySggnDec, .prod-detail-qntySggnInc {
+     background: #ccc;
+     cursor: pointer;
+}
+.prod-detail-suggnImgDetl {
+    color: #444;
+}
+.prod-detail-footer {
+    color: #444;
+}
+.prod-detail-footer1h3 {
+    margin: 10px 0px;
+}
+.prod-detail-footer2h4, .prod-detail-footer3h4 {
+    font-weight: normal;
+    color: #666;
+    margin-bottom: 0px;
+}
+.prod-detail-SgnDesc3 {
+    margin-bottom: 5px;
+}
+.prod-detail-colorBox {
+    height: 20px;
+    width: 20px;
+    background: rgb(114, 105, 105);
+    display: inline-block;
+    margin-right: 5px;
+    cursor: pointer;
+}
+.prod-detail-colorBoxOutline {
+    margin-top: 10px;
+    border:1px solid #ccc;
+    padding: 5px;
+}
+.colorBoxOutlineHide {
+    display: none;
+}
+.prod-detail-sizeBox {
+    background: #ddd;
+    color: #444;
+    padding: 2px 10px;
+    margin-right: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: inline-block;
+    margin-bottom: 5px;
+}

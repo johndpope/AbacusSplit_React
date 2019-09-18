@@ -1,0 +1,352 @@
+@font-face{
+  font-family:'Raleway';
+  src: url("/fonts/Raleway-Regular.ttf");
+}
+.pricingWarapper{
+    margin-top: 5%;
+}
+.outerPricingPlan{
+	background: #fff;
+	/*border: 1px solid #000;*/
+	padding:90px 3%;
+}
+.pricingHeader{
+    position: relative;
+    text-align: center;
+    color: #000000;
+    padding-bottom: 10px;
+}
+.pricingHeader h2{
+	font-size: 36px;
+    font-weight: 300;
+    margin-top: 0;
+    margin-bottom: 0px;
+    word-spacing: 8px;
+    letter-spacing: 2px;
+    font-family:'Raleway', sans-serif;
+    color: #4c4c4c;
+}
+.pricingHeader span{
+	margin-bottom: 15px;
+    letter-spacing: 1px;
+    margin-top: 0px;
+    font-size: 12px;
+    font-family:'Raleway', sans-serif;
+    color: #4c4c4c;
+
+}
+.pricingHeader::after {
+    content: '';
+    width: 16px;
+    height: 1px;
+    background-color: #4c4c4c;
+    position: absolute;
+    left: -webkit-calc(50% - 8px);
+    left: calc(50% - 8px);
+    bottom: 0;
+}   
+.slick-prev, .slick-arrow{
+    background: #31a3ff !important;
+    color: #fff !important;
+    border-radius: 50% !important;
+}
+.slick-next, .slick-arrow{
+    background: #31a3ff !important;
+    color: #fff !important;
+    border-radius: 50% !important;
+}
+.priceOuter{
+    background: #fff;   
+    padding-top: 15%;
+    padding-bottom: 15%;
+    text-align: center;
+}
+.pricingType{
+    text-align: center;
+    line-height: 1.25em;
+    text-transform: none;
+    font-weight: 500;
+    letter-spacing: 2px;
+    font-family: 'Raleway', sans-serif;
+    color: #595959;
+    font-size: 14px;
+    word-spacing: 3px;
+}
+.price{
+    text-align: center;
+    color:#31a3ff;
+    line-height: 1em;
+    letter-spacing: 2px;
+    font-size: 3.75rem;
+    font-weight: 500;
+    margin-top: 1.6rem;
+
+}
+.price:hover{
+    color:#4c4c4c;
+
+}
+.priceFee{
+    text-align: center;
+    color: #c4c4c4;
+    font-style: normal;
+    line-height: 1.25em;
+    letter-spacing: -0.8px;
+    margin: 0.1em 0 0.65em;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+}
+.price-Details{
+    text-align: center;
+     color: #919aa0;
+    margin-top: 1.3em;
+    font-size: 1.0667em;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.25em;
+    letter-spacing: 1px;  
+    padding-left: 0px;
+    padding-right: 0px;
+    font-family:'Raleway', sans-serif; 
+}
+.price-Details p{
+    line-height: 2;
+}
+.StartButton{
+    /*background: linear-gradient(to right,#f77d97 0%,#f57872 50%,#f57872 50%,#f77d97 100%) no-repeat scroll right bottom / 210% 100% #f57872 !important;*/
+    color: #ffffff !important;
+    background: linear-gradient(to right,#45b7ff 0%,#31a3ff 50%,#31a3ff 50%,#45b7ff 100%) no-repeat scroll right bottom / 210% 100% #31a3ff !important;
+    letter-spacing: 2px !important;
+    padding: 1.5rem 3.7rem !important;
+    border-radius: 35px;
+     font-family:'Raleway', sans-serif; 
+   
+}
+.StartButtonOuter{
+   padding-top: 15%;
+}
+.StartButton:hover{
+    background: linear-gradient(to left,#31a3ff 0%,#45b7ff 50%,#45b7ff 50%,#31a3ff 100%) no-repeat scroll right bottom / 210% 100% #31a3ff !important;
+  
+}
+.slick-slide.slick-current.slick-active + .slick-slide.slick-active > .priceOuter{
+    box-shadow: 0 0.5rem 3.688rem rgba(13, 18, 30, 0.17) !important;
+    border: 1px solid #fff;
+     background: #fff;   
+    padding-top: 15%;
+    padding-bottom: 15%;
+}
+.slick-initialized .slick-slide{
+    padding: 0.2%;
+}
+
+.slick-prev:before, .slick-next:before{
+    font-size: 18px!important;
+    line-height: 1;
+    opacity: 1!important;
+    color: white !important;
+    font-weight: bold !important;
+}
+.excitedBlogOuter{
+    background: #000;
+    padding: 1%;
+    margin-bottom: 2%;
+}
+.excitedBlogOuter .call-to-action{
+    text-align: center;
+    color: #fdfdfd;
+    background-size: contain;
+    padding: 50px 0;
+}
+.excitedBlogOuter .call-to-action .cta-text{
+    color: #fff;
+    margin-bottom: 30px;
+    margin-top: 0;
+    text-transform: capitalize;
+    font-size: 22px;
+}
+.btn-getStarted{
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+     border-radius: 2px;
+    font-size: 12px;
+    padding: 10px 35px;
+    letter-spacing: 2px;
+    line-height: 6px;
+    text-transform: uppercase;
+    vertical-align: middle;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px transparent;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    position: relative;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    background-image: none;
+}    
+.btn-getStarted:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #ffffff;
+    -webkit-transform: scaleY(0);
+    -ms-transform: scaleY(0);
+    transform: scaleY(0);
+    -webkit-transform-origin: 50% 0;
+    -ms-transform-origin: 50% 0;
+    transform-origin: 50% 0;
+    -webkit-transition-property: -webkit-transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+.btn-getStarted:hover, .btn-getStarted:focus, .btn-getStarted:active {
+    color: #000;
+    outline: none;
+}
+
+.btn-getStarted:hover:before, .btn-getStarted:focus:before, .btn-getStarted:active:before {
+    -webkit-transform: scaleY(1);
+    -ms-transform: scaleY(1);
+    transform: scaleY(1);
+}
+.OuterBlock{
+     /*margin-bottom: 20px;*/
+    position: relative;
+    background: url('http://ureach.ancorathemes.com/wp-content/uploads/2017/05/bg1.jpg?id=347') 0% 0% / cover;
+    top: 0px;
+    padding: 70px 0px;
+}
+.plan-description ul{
+    border: 0;
+    margin-bottom: 30px;
+}
+.plan-description > ul > li > a{
+  color: #fff;
+    margin-right: 4px;
+    border: 0;
+    border-radius: 0;
+    border-bottom: 2px solid rgba(227, 225, 225, 0);
+    font-weight: 400;
+    text-transform: uppercase;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.plan-description > ul > li > a:hover,.plan-description > ul > li > a:focus{
+   color: #fff;
+    cursor: pointer;
+    background: transparent;
+    background-color: transparent;
+     border: 0;
+    border-bottom: 2px solid #e3e1e1;  
+}
+
+.plan-description > ul > li.active > a, .plan-description > ul > li.active > a:hover, .plan-description > ul > li.active > a:focus{
+   color: #fff;
+    cursor: pointer;
+    background: transparent;
+    background-color: transparent;
+     border: 0;
+    border-bottom: 2px solid #e3e1e1;
+}
+.studyPlanHeader{
+    text-align: center;
+     margin-top: 6%;
+}
+.studyPlanHeader h2{
+    font-size: 36px;
+    font-weight: 300;
+    margin-top: 1rem;
+    margin-bottom: 3.2rem;
+    word-spacing: 8px;
+    letter-spacing: 2px;
+    font-family: 'Raleway', sans-serif;
+    color: #fff;
+    font-weight: bold;
+}  
+.studyPlanDescription{
+    /*text-align: center;*/
+    color: #c4c4c4;
+    margin-top: 1.3em;
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.25em;
+    letter-spacing: 1px;
+    font-family: 'Raleway', sans-serif;
+} 
+.studyPlanDescription p {
+    /*line-height: 2;*/
+}
+/*:root {
+  background: #fff;
+}
+
+span#procent {
+  display: block;
+  position: absolute;
+  left: 54%;
+  top: 50%;
+  font-size: 40px;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+}
+
+span#procent::after {
+  content: '%';
+}
+
+.canvas-wrap {
+  position: relative;
+  width: 300px;
+  height: 300px;
+}*/
+.c100{
+    background-color: rgba(173, 169, 169, 0.2) !important;
+}
+.c100 > span{
+    color: #fff !important;
+}
+.c100:after{
+    background-color: #000 !important;
+    opacity: 0.3 !important;
+}
+.pie, .c100 .bar, .c100.p51 .fill, .c100.p52 .fill, .c100.p53 .fill, .c100.p54 .fill, .c100.p55 .fill, .c100.p56 .fill, .c100.p57 .fill, .c100.p58 .fill, .c100.p59 .fill, .c100.p60 .fill, .c100.p61 .fill, .c100.p62 .fill, .c100.p63 .fill, .c100.p64 .fill, .c100.p65 .fill, .c100.p66 .fill, .c100.p67 .fill, .c100.p68 .fill, .c100.p69 .fill, .c100.p70 .fill, .c100.p71 .fill, .c100.p72 .fill, .c100.p73 .fill, .c100.p74 .fill, .c100.p75 .fill, .c100.p76 .fill, .c100.p77 .fill, .c100.p78 .fill, .c100.p79 .fill, .c100.p80 .fill, .c100.p81 .fill, .c100.p82 .fill, .c100.p83 .fill, .c100.p84 .fill, .c100.p85 .fill, .c100.p86 .fill, .c100.p87 .fill, .c100.p88 .fill, .c100.p89 .fill, .c100.p90 .fill, .c100.p91 .fill, .c100.p92 .fill, .c100.p93 .fill, .c100.p94 .fill, .c100.p95 .fill, .c100.p96 .fill, .c100.p97 .fill, .c100.p98 .fill, .c100.p99 .fill, .c100.p100 .fill{
+     border: 0.08em solid #31a3ff !important;
+}
+.outerCircleProgressBar{
+    margin-top: 5%;
+}
+.progress-Bar-Name{
+    font-size: 13px;
+    text-align: center;
+    color: #ffffff;
+    font-weight: bold;
+}
+.withoutLoginPrice{
+    letter-spacing: 1px;
+    font-size: 3rem;
+}
+.studyPlanOuterHead{
+    color: #fff;
+    margin-bottom: 30px;
+}
+.studyPlanOuterHead h2{
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 30px;    
+    text-align: center;
+}

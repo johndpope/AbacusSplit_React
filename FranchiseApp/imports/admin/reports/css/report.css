@@ -1,0 +1,156 @@
+
+.nav-pillss > li + li{
+	margin-left: 0px !important
+	padding-left: 0px;
+    padding-right: 0px;
+    font-family: "Poppins","sans-serif";
+}
+.ReportTabs{
+	/*margin-top: 15px;*/
+}
+.MarginTop20{
+	margin-bottom: 25px;
+	font-family: "Poppins","sans-serif";
+}
+.noEarning{
+	font-size: 20px;
+	font-family: "Poppins","sans-serif";
+	color: #333;
+}
+.reportTables tr th, .reportTables tr td{
+	font-family: "Poppins","sans-serif";
+}
+.categoryTabAdmin{
+	margin-top: 30px;
+}
+.ExamReportTable{
+	overflow-x: auto;
+}
+.searchTableBoxAlignSETReport{
+	margin-top: 10px !important;
+	margin-bottom: 10px;
+	z-index: 111;
+}
+.reportTitle{
+	margin-top: 0px;
+}
+.searchboxreport{
+	margin-top:15px;
+	margin-bottom:15px;
+	/*margin-left:18px;*/
+}
+.searchbox{
+	margin-top:15px;
+	margin-bottom:30px;
+	/*margin-left:15px;*/
+	/*border-radius:5px;*/
+}
+.paddingleftzero{
+	padding-left: 0!important;
+	padding-right: 0!important;
+}
+.bottommargin{
+	margin-bottom:10px;
+}
+
+/*.competitionSelect{
+	margin-top: 15px;
+}*/
+
+.MarginTop20{
+	margin-left:14px;
+}
+.totalamount{
+	color:#333;
+	font-weight: bold;
+
+}
+.FWSPreport{
+	font-weight: bold;
+	font-size: 14px;
+}
+.comFranchTit{
+	text-align: Center;
+}
+.franchCompRepTab{
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.hidepill{
+	display:none!important;
+}
+.searchbox1{
+	margin-top: 0px!important;
+    margin-bottom: 15px!important;
+}
+.bottomSpace{
+	margin-bottom:10px;
+}
+.searchlbl{
+	margin-top:25px;
+}
+.tableAlignment{
+	margin-bottom:-20px;
+}
+.inputTextReportTabel{
+	margin-bottom:10px!important;
+}
+.practiceTextBox{
+    padding: 6px 6px!important;
+}
+.searchlbl1{
+	margin-top:10px!important;
+}
+.searchbxtop{
+	margin-top: 9px!important
+}
+.inputTextpractice{
+	margin-bottom:15px!important;
+}
+.paddingleftnull{
+	padding-left:0px!important;
+}
+.rightspacezero{
+	padding-right:0px!important;
+}
+
+.studentbluelabel{
+	color:blue;
+}
+
+.downloadBtnRep{
+	position: absolute;
+    right: 17px;
+    margin-top: 43px;
+}
+.frachiseNMWrap{
+	margin-top: 20px;
+}
+.frachiseNMWrapRep{
+	position: absolute;
+    display: none;
+}
+
+.franReport{
+	margin-bottom: 15px;
+}
+
+.tablebottomspace{
+	margin-bottom:55px;
+}
+.searchalignment{
+	padding-right:32px!important;
+}
+.tablealignzero{
+	padding-left:0!important;
+	padding-right:0!important;
+}
+.appearingStatus{
+	color:green;
+}
+.attemptedStatus{
+	color:red;
+}
+.textAlignCenterC{
+	text-align: center;
+}

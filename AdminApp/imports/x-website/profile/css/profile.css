@@ -1,0 +1,206 @@
+.outerProfileBlock{
+	padding-top:23px;
+  padding-bottom: 23px;
+  background-color: #f0f0f0;
+}
+.innerProfileWrapper{
+	/*border: 1px solid #999;*/
+	/*padding: 0;*/
+  /*background: #f6f6f7;*/
+} 
+.profileImgOuter{
+	/*padding: 1%;*/
+  padding-bottom: 15px;
+  /*padding-top: 15px;*/
+  margin-bottom: 0;
+  text-align: center;
+  text-rendering: optimizeLegibility;
+  color: #4a4a4a;
+  line-height: 1.6;
+  letter-spacing: 0.025em;
+  /*font-size: 13px;*/
+  background-color: #fff;
+  min-height: 372px;
+  margin-bottom: 15px;
+}
+.profileImgOuter > h5{
+  letter-spacing: 1px;
+}
+.profileImg{
+  height: 100px;
+  width: 100px;
+  /*border: 1px solid #ccc;*/
+}
+.activityBlock{
+  margin-bottom: 0;
+  text-rendering: optimizeLegibility;
+  line-height: 1.6;
+  letter-spacing: 0.025em;
+  color: #4a4a4a; 
+  font-size: 13px; 
+}
+.activityOuter{
+  /*padding-top:15px;*/
+  padding-bottom: 15px;
+  background-color: #fff;
+  min-height: 372px;
+  margin-bottom: 15px;
+}
+.activityBlock > div:first-child > i{
+  color: #00b8ff;
+}
+.activityBlock > div:last-child{
+  text-align: right;
+}
+.activityBlock > div:last-child > a, .activityBlock > div:last-child > a:hover{
+  color: #00b8ff;
+  text-decoration: underline;
+}
+.activityBlock > div:nth-child(2){
+  padding-left: 7px;
+  padding-right: 7px;
+}
+.activityBlock > h5{
+  margin-top: 0px;
+  margin-bottom: 5px;
+  font-size: 13px;
+}
+.activityOuter > hr{
+  margin-top: 0px;
+  /*padding-right: 35px;*/
+  border-color: #b9bed2;
+  margin-left: 11px;
+}
+.activityOuter > h5{
+  letter-spacing: 1px;
+}
+.companyOuter{
+	margin-bottom: 15px;
+  text-align: left;
+  text-rendering: optimizeLegibility;
+  color: #4c4c4c;
+  line-height: 1.6;
+  letter-spacing: 0.025em;
+  /*padding-top:15px;*/
+  padding-bottom: 15px;
+  background-color: #fff;
+  min-height: 372px;
+}
+.innerActivityWrapper{
+	padding: 0px;
+		border: 1px solid #999;
+		border-top: 0;
+}
+.verifiactionBlockOuter{
+	padding: 2%;
+	  border-left: 1px solid #4c4c4c;
+
+}
+.verificationBlock{
+	padding: 10% 10% 3% 10%;
+  border-top: 3px solid #00b8ff!important;
+  border: 1px solid #e4e7ec;
+  background: #fff;
+  box-shadow: 2px 2px 12px #999;
+  margin-bottom: 10%;
+  height: 140px;
+}
+.iconOuterBlock{
+	text-align: center;
+}
+.iconOuterBlock i{
+	color: #00b8ff;
+}
+.verificationName{
+	text-rendering: optimizeLegibility;
+  color: #4c4c4c;
+  line-height: 1.6;
+  letter-spacing: 0.025em;
+  font-size: 13px;
+  text-align: center;
+  padding-top: 10%;
+  cursor: pointer;
+}
+.verificationName:hover{
+  color: #00b8ff;
+}
+.verificationName p{
+	margin-bottom: 0;
+}
+.outerVideoBlock{
+  padding: 2%;
+}
+.videoProfile{
+	height: 200px;
+	width: 100%;
+}
+.userImg{
+  margin: 6px 0px;
+}
+.userInfo > p{
+  font-size: 13px;
+  color: #414260;
+}
+.userInfo > div > .progress{
+  height: 12px;
+  background-color: #4888a1;
+  margin-bottom: 9px;
+}
+.userInfo > div > h3{
+  margin-top: 13px;
+  color: #00b8ff;
+}
+.userInfo > div > .progress > .progress-bar, .proofDocsProgress > .progress > .progress-bar{
+  background-color: #4888a1;
+  background-image: linear-gradient(45deg, rgba(0, 184, 255, .15) 25%, #00b8ff 25%, #00b8ff 50%, rgba(0, 184, 255, .15) 50%, rgba(0, 184, 255, .15) 75%, #00b8ff 75%, #00b8ff);
+}
+.visitedBlock{
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+.visitedBlock > div > img{
+  max-width: 100%;
+}
+.visitedBlock > div{
+  padding-left: 2px;
+  padding-right: 2px;
+}
+.viewedBlock > div{
+  font-size: 24px;
+  color: #00b8ff;
+}
+.viewedBlock > p{
+  font-size: 13px;
+}
+.companyOuter > h6{
+  margin-top: 15px;
+  margin-bottom: 8px;  
+}
+.companyOuter > h6 > a, .companyOuter > h6 > a:hover{
+  color: #00b8ff;
+  text-decoration: underline;
+}
+.companyOuter > h5{
+  letter-spacing: 1px;
+}
+.verSerBlock, .newsVerBlock, .placeholderVerBlock{
+  background-color: #fff; 
+  min-height: 332px;
+  /*margin-bottom: 15px;*/
+}
+.newsVerBlock > h5, .placeholderVerBlock > h5{
+  padding: 10px 0px;
+  letter-spacing: 1px;
+}
+.landingBlocks > h5{
+  background-color: #00b8ff;
+  color: #fff;
+  margin-top: 0px;
+  padding: 10px 0px;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+.profileServiceImage{
+  height: 50px;
+  width: 50px;
+}

@@ -1,0 +1,205 @@
+@font-face{
+  font-family:'Raleway';
+  src: url("/fonts/Raleway-Regular.ttf");
+}
+
+.servicesImageWrapper{
+     /*margin-bottom: 20px;*/
+    position: relative;
+    background: url('http://stoic.aqibashef.me/wp-content/uploads/2017/05/bg-testimonial.jpg') 0% 0% / cover;
+    top: 0px;
+    padding: 150px 0px;
+}
+.servicesImageWrapper .header-wrapper-inner {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    color: #fff;
+}
+.header-wrapper-inner h1{
+	 font-size: 60px;
+    font-weight: 100;
+    letter-spacing: 8px;
+    margin-bottom: 15px;
+    margin-top: 0;
+    font-family:'Raleway',sans-serif;
+}
+   
+.color-overlay {
+    background: #000000;
+    opacity: 0.3;
+    /*min-width: 100vw;*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    bottom: 0;
+    right: 0;
+}
+.servicesOuterWrapper{
+	background: #fff;
+	/*border: 1px solid #000;*/
+	padding: 5%;
+}
+.servicesInnerWrapper{
+	background: #fff;
+	padding-top: 10%;
+	padding-bottom: 10%;
+	/*border: 1px solid #000;*/
+	 border:1px solid rgba(253, 253, 253, 0);
+}
+.servicesInnerWrapper:hover{
+  background:#FAFAFA;
+  border:1px solid rgba(253, 253, 253, 0);
+}
+.outerIcon{
+	text-align: center;
+  font-size: 4em;
+  padding: 0px;
+}
+.outerIcon i{
+	color: #595959;
+}
+.aboutService{
+	padding: 0px;
+}
+.aboutService h4{
+		color: #4c4c4c;
+	 font-size: 18px;
+    word-spacing: 3px;
+    letter-spacing: 3px;
+    margin-bottom: 25px;
+    font-family:'Raleway',sans-serif;
+    text-align: center;
+}
+.aboutService p{
+  font-size: 14px;
+  line-height: 1.6;
+  letter-spacing: 0.025em;
+  text-align: center;
+  color: #4c4c4c;
+}    
+.expertiseImageWrapper{
+    position: relative;
+    background: url('http://stoic.aqibashef.me/wp-content/uploads/2017/01/bg-expertise-1.png') 0% 0% / cover;
+    top: 0px;
+    box-sizing: border-box;
+    padding-left: 73px;
+    padding-right: 73px;
+    padding-top: 90px !important;
+    padding-bottom: 90px !important;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.expertiseHeader{
+    color: #fff !important;
+    position: relative;
+    text-align: center;
+    color: #000000;
+    padding-bottom: 10px;
+    margin-bottom: 0px;
+}
+.expertiseHeader h2{
+      font-size: 36px;
+    font-weight: 300;
+    margin-top: 0;
+    margin-bottom: 0px;
+    word-spacing: 8px;
+    letter-spacing: 2px;
+      font-family:'Raleway', sans-serif;
+}
+.expertiseHeader span{
+     margin-bottom: 15px;
+    letter-spacing: 1px;
+    margin-top: 0px;
+    font-size: 12px;
+      font-family:'Raleway', sans-serif;
+}
+.expertiseHeader::after {
+    content: '';
+    width: 16px;
+    height: 1px;
+    background-color: #fff;
+    position: absolute;
+    left: -webkit-calc(50% - 8px);
+    left: calc(50% - 8px);
+    bottom: 0;
+} 
+.expertiseOuterWrapper{
+    padding-top: 6%;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.expertise-description ul{
+    border: 0;
+    margin-bottom: 30px;
+}
+.expertise-description > ul > li > a{
+  color: #fff;
+    margin-right: 4px;
+    border: 0;
+    border-radius: 0;
+    border-bottom: 2px solid rgba(227, 225, 225, 0);
+    font-weight: 400;
+    text-transform: uppercase;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.expertise-description > ul > li > a:hover,.expertise-description > ul > li > a:focus{
+   color: #fff;
+    cursor: pointer;
+    background: transparent;
+    background-color: transparent;
+     border: 0;
+    border-bottom: 2px solid #e3e1e1;  
+}
+
+.expertise-description > ul > li.active > a, .expertise-description > ul > li.active > a:hover, .expertise-description > ul > li.active > a:focus{
+   color: #fff;
+    cursor: pointer;
+    background: transparent;
+    background-color: transparent;
+     border: 0;
+    border-bottom: 2px solid #e3e1e1;
+}
+
+
+.tabInnerLogo i{
+  color: #fff;
+}
+.tabInnerContent p{
+    color: #fff;
+    font-size: 14px;
+    line-height: 1.6;
+    letter-spacing: 0.025em;
+}
+.progress-box{
+  color: #fff;
+}
+.expertiseOuterWrapper .progress{   
+    background: #313131;
+    border-radius: 0;
+    height: 3px;   
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-top: 1%;
+}
+.expertiseOuterWrapper .progress-bar{
+  background: #fdfdfd;
+}
+.progress-heading, .inner-progress-heading{
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.expertOuterDiv{
+  color: #fff;
+  margin-bottom: 20px;
+}
+.expertisePHead{
+  margin-bottom: 30px;
+}
+.expertisePHead h4{
+  font-weight: bold;
+}

@@ -1,0 +1,47 @@
+.txtareaBox{
+	margin-top:10px;	
+}
+.showCategories{
+	display:none;
+}
+.txtareaBoxContent{
+	padding:10px;
+}
+.drpdownlbel{
+	text-align: left;
+    padding-left: 0
+}
+.drpdownlbeltitle{
+	text-align: left;   
+}
+.drpdownlbeltitle1{
+	text-align: left;  
+	padding-left:15px; 
+}
+.leftalignedText{
+	text-align: left!important;
+}
+.scrolltomodal{
+	overflow-y: auto;
+    height: 35px;
+}
+.fileuploadalign{
+	padding-left:0px!important;
+}
+.smslbel{
+	text-align: right;
+    padding-right: 0
+}
+.viewnum{
+	color:blue;
+}
+.modalbodyHeightsms{
+	 height:400px;
+}
+/*.chckbxstyle{
+	height: 25px!important;
+    width: 25px!important;
+}
+.chbxlabel{
+	margin-top:-5px;
+}*/

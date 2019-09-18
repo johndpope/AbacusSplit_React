@@ -1,0 +1,164 @@
+#listOfUsersDwnld{
+	overflow-y: auto;
+	overflow-x: auto;
+}
+.EditPackageProfileWrap{
+	border:2px solid #eee;
+	padding-top:45px;
+}
+.checkcenter{
+	text-align: center!important;
+}
+.showercolor2{
+  background:#008d4c!important;
+  color:#fff;
+  font-size:25px!important;
+  height: 25px; 
+  width: 25px;
+  padding-top: 1px;
+}
+.showercolor3{
+  background:#ccc!important;
+  color:#fff;
+  font-size:25px!important;
+  height: 25px; 
+  width: 25px;
+  padding-top: 1px;
+}
+.showercolor{
+  background:#008d4c!important;
+  color:#fff;
+  font-size:25px!important;
+  height: 25px; 
+  width: 25px;
+  padding-top: 1px;
+}
+.showercolor1{
+  background:#ccc!important;
+  color:#fff;
+  font-size:25px!important;
+  height: 25px; 
+  width: 25px;
+  padding-top: 1px;
+}
+.formwrap{
+	padding-bottom:20px;
+}
+.practicepaperselectbtn{
+	font-size:13px!important;
+	padding: 7px 0px!important;
+}
+.zeropackagepadding{
+	padding:0!important;
+}
+.abacuswrapper{
+	background-image: url("/images/abacus6.jpg");
+}
+.textboxborder{
+	
+	border-color: #ccc!important;
+	/*border-color: #3c8dbc!important;*/
+}
+.whitetext{
+	color:white!important;
+}
+/*.bordercolor{
+	border-top: 3px solid #3c8dbc;
+	border-left:1px solid #3c8dbc;
+	border-right:1px solid #3c8dbc;
+	border-bottom:1px solid #3c8dbc;
+}*/
+.paddingleftzero{
+	padding-left:0!important;
+}
+.selectedpaperqty{
+	font-size:13px!important;
+}
+.requiredsign{
+	color:red!important;
+	font-size:15px!important;
+}
+.textaligncenter{
+	text-align: center!important;
+}
+.pckgprice{
+	margin-left:25px!important;
+	z-index: 999;
+}
+.searchTableBoxAlignSETT2{
+	padding-top:30px!important;
+}
+
+/*====================React Table Css============================*/
+
+.questWrapReactTable .rt-tbody{
+text-align: center;
+}
+.checkbox-table{
+margin-top: 5px;
+margin-bottom: 0px;
+}
+.checkbox-table label{
+margin-bottom: 0px !important;
+}
+.ReactTable .rt-thead .rt-tr {
+background: #3c8dbc;
+color: #fff;
+font-family: "Poppins","sans-serif";
+font-weight: bold;
+font-size: 16px;
+}
+.questWrapReactTable .ReactTable .rt-thead .rt-th.-cursor-pointer:first-child{
+
+cursor: none;
+}
+.ReactTable .rt-tbody .rt-td{
+font-family: "Poppins","sans-serif";
+}
+.questWrapReactTable .ReactTable .rt-thead.-filters .rt-th{
+color: #333;
+}
+.questWrapReactTable .ReactTable .-pagination .-btn{
+background: #3c8dbc;
+color: #fff;
+font-family: "Poppins","sans-serif";
+}
+.PracticepaperDataNotAvailable{
+	color:red!important;
+}
+.ntdiaplay{
+	color: #f00;
+	font-size: 20px;
+	text-align: center !important;
+}
+.tablespace{
+	margin-top:15px;
+}
+.waitingResLoadingWrap h3{
+	margin-top: 300px;
+}
+.waitingResLoadingWrap h3 a{
+	color: #3c8dbc !important;
+}
+/*.topMarginToTable{
+	margin-top:15px;
+
+}*/
+.topMarginToTable{
+	margin-top:15px;
+}
+.box-body1{
+	padding-top:10px!important;
+
+}
+.tablescrollPP{
+	height:285px;
+	overflow-y: auto;
+}
+.addpaperbtn{
+	background:#3c8dbc!important;
+	color:white!important;
+}
+.package-ModalDialog{
+	width: 80%;
+}

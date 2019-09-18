@@ -1,0 +1,217 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+@font-face {
+font-family:'Geometric';
+src:url(/fonts/Geometric_Slabserif.ttf)
+}
+@font-face {
+font-family:'Humanist';
+src:url(/fonts/Humanist.ttf)
+}
+
+.bg {
+    background-image: url("/images/2480.png");
+    background-size: 100% 100%;
+    /*height: 952px; */
+    background-repeat: no-repeat;
+    /*padding: 20px;*/
+    /*background-size: cover; */
+   /* background-image: url("/img/2480.png");
+    background-size: 100%;
+    height: 952px; 
+    background-repeat: no-repeat;
+    background-size: cover;*/
+}
+.certificateLogo{
+    height: 75px;
+    display: block;
+    margin: 0 auto;
+}
+.certificatePara,.hasLine{
+    font-weight: 600;
+    font-family: "Geometric";
+    font-size: 25px;
+    color: #000;
+    text-align: center;
+    margin-bottom: 0;
+}
+.certifyLastLine,.certifyLastTxtLine{
+    font-weight: 600;
+    font-family: "Geometric";
+    font-size: 25px;
+    color: #000;
+    text-align: center;
+    margin-bottom: 0;
+}
+.certificateName,.certificateNameRnk{
+
+    color: #871f78;
+    font-size: 25px;
+    font-weight: 600;
+    font-style: italic;
+    font-family: fantasy;
+}
+.ceoTXt{
+    font-weight: 600;
+    font-family: 'Geometric';
+    text-align: center;
+    color: #000;
+}
+.certificateTxtImg{
+    height:50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.certifyTitle{
+    font-weight: 600;
+    font-family: 'Humanist';
+    font-size: 25px;
+    color: #000;
+    /*margin-top: 50px;*/
+    padding-left:12%;
+}
+.certifyTitle2{
+    font-weight: 600;
+    font-family: 'Humanist';
+    font-size: 25px;
+    color: #000;
+    padding-left:12%;
+
+}
+.certifywrapper{
+    padding: 35px;
+}
+.titleCertify,.titleCertify2,.certiTitle{
+    padding: 0;
+}
+.certificateWrappers{
+   background-image: url("/images/certificate_3.png");
+    background-size: 100% 100%;
+    /*height: 952px; */
+    background-repeat: no-repeat;
+    /*background-size: cover; */
+}
+.certificateTitle{
+    font-weight: 600;
+    font-family: 'Humanist';
+    font-size: 25px;
+    color: #000;
+    text-align: center;
+    /*margin-top: 87px;*/
+        margin-top: 15px;
+}
+.certificateTitle2{
+    font-weight: 600;
+    font-family: 'Humanist';
+    font-size: 25px;
+    color: #000;
+    margin-bottom: 0;
+    margin-top: -10px;
+    text-align: center;
+    padding: 0;
+}
+.certiSubTitle{
+    font-weight: 500;
+    font-family: 'Humanist';
+    /*text-align: center;*/
+    margin-top: -3px;
+    color: #000;
+    padding-left:27%;
+}
+.certiSubTitleParticipate{
+    font-weight: 500;
+    font-family: 'Humanist';
+    text-align: center;
+    margin-top: -3px;
+    color: #000;
+    /*padding-left:27%;*/
+}
+.regesNo{
+    font-family: 'Humanist';
+    font-weight:500;
+    text-align: center;
+   /* margin-top: 0px;*/
+    color: #000;
+    font-size: 15px;
+    margin-top: -9px;
+}
+.certiPartTitle{
+    font-family: 'Italianno', cursive;
+    /* font-weight: 600; */
+    color: #e68bc5;
+    text-align: center;
+    font-size: 55px;
+    /*font-size:100px;*/
+}
+.certifySignImg{
+    height: 80px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.certifyLastTxtLine2{
+    font-weight: 600;
+    font-family: "Geometric";
+    font-size: 25px;
+    text-align: center;
+    color: #e02711;
+}
+.certificateName{
+    color: #871f78;
+    font-size: 25px;
+    font-weight: 600;
+    font-style: italic;
+    font-family: fantasy;
+    text-align: center;
+}
+.certificateNameRnk{
+    color: #871f78;
+    font-size: 25px;
+    font-weight: 600;
+    font-style: italic;
+    font-family: fantasy;
+    text-align: center;
+}
+.certificateSignWrapper{
+    margin-top: 5%;
+}
+.studCCWrap{
+    position: absolute;
+}
+.certDlS{
+    margin-bottom: 8px;
+    margin-right: 8px;
+    margin-top: 20px;
+}
+.certDlSRank{
+    margin-right: 8px;
+    /* margin-top: 20px; */
+    position: absolute;
+    right: 0;
+    margin-top: -71px;
+}
+.noCertificateMsg{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 20;
+}
+.certicateCompWrap{
+    margin-top: 18.5%;
+}
+.addTransitionCCW{
+    margin-top: 2.5%;
+    z-index: 111;
+    transition: 0.25s;
+}
+.addMoreCerthideBtn{
+    display: none;
+}
+.addMoreCertBtn{
+    display: block;
+    position: absolute;
+    z-index: 11;
+}

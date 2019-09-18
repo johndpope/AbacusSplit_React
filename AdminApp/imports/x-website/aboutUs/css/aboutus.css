@@ -1,0 +1,209 @@
+@font-face{
+  font-family:'Raleway';
+  src: url("/fonts/Raleway-Regular.ttf");
+  font-style: normal;
+}
+
+.aboutusImg{
+ 	width: 100%;
+    height: 279px;
+}
+.head{
+	background-image: url(../images/assureid/aboutuspage.jpg);
+    /* Set a specific height */
+    /* Create the parallax scrolling effect */
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 190px 0px;
+    position: relative;
+}
+
+.headContent{
+   /* position: absolute;
+    z-index: 1;
+    color: white;
+    top: 30%;
+    padding-left: 7%;*/
+    text-align: center;
+}
+.headContent h1{
+    margin-top: 0px;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 60px;
+    font-weight: 100;
+    letter-spacing: 8px;
+}
+/*.path{
+    position: relative;
+    top: 42px;
+    padding-left: 19%
+}*/
+	
+.marginBTM{
+	margin-bottom: 20px;
+}
+.aboutImgTop{
+	height: 600px;
+}
+#about-content{
+    /*height: 540px;*/
+}
+#about-contentNew{
+    height: 610px;
+    margin-bottom: 45%;
+}
+.aboutTop{
+	margin-top: 90px;
+}
+.abtTeams{
+	width: 100%;
+	height: 450px;
+}
+.aboutBanner{
+	padding: 0px;
+}
+.imagepadding{
+	padding:0px;
+}
+.aboutBanner{
+	background: #eee;
+    height: 450px;
+    margin-bottom: 3%;
+}
+.paraAbout{
+	margin-bottom: 10%;
+}
+.NoPadding{
+	padding: 0px;
+}
+.page-sectionThree{
+    border: 1px solid #fff;
+    height: 68px;
+    color: #fff;
+    cursor: pointer;
+    padding: 15%;
+}
+.headOne{
+	background-image: url(../images/assureid/bg-video.jpg);
+    /* Set a specific height */
+    height: 450px;
+    /* Create the parallax scrolling effect */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.headOne h3 span{
+	font-family: 'Open Sans',Arial,Helvetica,sans-serif!important;
+  	font-size: 36px;
+}
+.videoMmodal{
+	    width: 100%;
+    height: 477px;
+}
+.videoBtnPosition{
+	color: black;
+    font-size: 3em;
+    position: absolute;
+    right: -28px;
+    top: -6px;
+}
+.videoHeadTwo{
+    color: #fff;
+    padding-top: 7px;
+    font-size: 16px;
+    line-height: 20px;
+}
+.videoHeadOne{
+    color: #fff;
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 36px;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 0px;
+    text-align: right;
+    padding-right: 15px;
+}
+.marginZero{
+    margin:15px;
+}
+.marginHeading{
+        margin-top: 5%;
+    margin-bottom: 5%;
+}
+.marginHeadings{
+        margin-top: 1%;
+    margin-bottom: 2%;
+}
+.color-overlay{
+    min-width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    bottom: 0;
+    right: 0;
+}
+.color-overlay-one{
+        min-width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100.4%;
+    width: 100%;
+    bottom: 0;
+    right: 0;
+}
+.color-overlay{
+    background: #000000;
+    opacity: 0.3;
+}
+.color-overlay-one{
+    background: #000000;
+    opacity: 0.3;
+}
+.aboutContentone{
+    text-align: right;
+}
+.aboutUS-Img{
+    height: auto;
+}
+.aboutUS-Img > img{
+    max-width: 100%;
+    max-height: 100%;
+}
+.aboutP{
+    color: #4c4c4c;
+    line-height: 1.6;
+    letter-spacing: 0.025em;
+}
+.aboutDiv{
+    padding: 0px;
+}
+.about-Us{
+    padding: 90px 15px;
+}
+.about-UsVideo{
+    padding: 30px 0px 0px 0px;
+}
+.aboutVideoContainer{
+    position: relative;
+    top: 43%;
+}
+.aboutPadLeft{
+    padding-left: 30px;
+}
+.aboutBottom{
+    padding-left: 70px;
+    padding-right: 70px;
+    margin-bottom: 120px;
+    margin-top: 120px;
+}
+.counter > h3{
+  color: #4c4c4c;
+}
+.counter > p{
+  color: #4c4c4c;
+}

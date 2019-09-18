@@ -1,0 +1,170 @@
+.noPadLR{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.contactusHeading{
+	font-size: 60px;
+    font-weight: 100;
+    letter-spacing: 8px;
+    margin-bottom: 15px;
+    margin-top: 11%;
+    /*background-image: url('/public/images/bg-testimonial.jpg');
+    background-repeat: no-repeat;*/
+}
+.contactOuterWrapper{
+    padding: 6% ;
+}
+.borderana{
+	border:1px solid red;
+}
+
+.contactusOutWrapper{
+	padding-top: 6%;
+}
+
+.contactusOutWrapper1{
+    padding-top: 6%;
+    padding-bottom: 6%;
+}
+.contactHead{
+     /*margin-bottom: 20px;*/
+    position: relative;
+    background: url('http://stoic.aqibashef.me/wp-content/uploads/2017/05/bg-testimonial.jpg') 0% 0% / cover;
+    top: 0px;
+    padding: 150px 0px;
+}
+
+.contactTitle{
+	font-size: 18px;
+    word-spacing: 3px;
+    letter-spacing: 3px;
+    margin-bottom: 25px;
+    /*font-family: 'Raleway', sans-serif;*/
+    color: #4c4c4c;
+    font-weight: 500;
+}
+
+.contactTextbox{
+	margin: 15px 0px;
+	padding: 8px 15px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    width: 100%;
+    display: block;
+    color: #4c4c4c;
+    line-height: 1.6;
+    /*font-family: 'Roboto', sans-serif;*/
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+.contactSubmit{
+	/*padding: 8px 15px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    width: 100%;
+    display: block;
+    color: #fff;
+    background-color: #000;*/
+    background-color: #000;
+    border: 1px solid #fff;
+    color: #fff;
+     border-radius: 2px;
+    font-size: 12px;
+    padding: 10px 35px;
+    letter-spacing: 2px;
+    line-height: 6px;
+    text-transform: uppercase;
+    vertical-align: middle;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px transparent;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    position: relative;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    background-image: none;
+}
+
+/*.contactSubmit:hover{
+	color: #000;
+    background-color: #fff;
+    border: 1px solid #000;
+    transition-timing-function: ease-in;
+}*/
+.contactSubmit:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 1px solid #000;
+    background: #ffffff;
+    -webkit-transform: scaleY(0);
+    -ms-transform: scaleY(0);
+    transform: scaleY(0);
+    -webkit-transform-origin: 50% 0;
+    -ms-transform-origin: 50% 0;
+    transform-origin: 50% 0;
+    -webkit-transition-property: -webkit-transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+.contactSubmit:hover, .contactSubmit:focus, .contactSubmit:active {
+    color: #000;
+    outline: none;
+}
+
+.contactSubmit:hover:before, .contactSubmit:focus:before, .contactSubmit:active:before {
+    -webkit-transform: scaleY(1);
+    -ms-transform: scaleY(1);
+    transform: scaleY(1);
+}
+.contactUsMap{
+    width: 100%;
+    filter: grayscale(60%);
+    margin: 15px 0px;
+    height: 240px;
+}
+
+.addressHeading{
+	margin-bottom: 15px !important;
+    text-decoration: underline;
+    letter-spacing: 1px;
+    text-transform: none;
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+    color: #000000;
+    margin-top: 10px;
+    font-weight: 500;
+    line-height: 1.1;
+    -webkit-margin-before: 1.67em;
+    -webkit-margin-after: 1.67em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+
+.addressDetails{
+	line-height: 20px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    font-style: normal;
+    color: #000;
+}
+
+.contactUsMapOuter .map-container {
+	padding-top: 20px !important;
+	height: 270px;
+	width: 100%;
+}

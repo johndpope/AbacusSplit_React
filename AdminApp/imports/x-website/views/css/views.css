@@ -1,0 +1,183 @@
+.viewTitle{
+  padding: 0;
+  /* padding-top: 0px; */
+  font-size: 16px;
+  color: #4c4c4c;
+  margin-bottom: 10px;
+}
+.viewlogo{
+  font-size: 16px;
+}
+.horizontalLine{
+	margin-top: 0;
+  background: #414260;
+  opacity: 0.5;
+
+}
+.formGroup{
+   margin-top: 4%;  
+}
+.nopadLeft{
+	padding-left: 0;
+}
+.summeryContent{
+	padding-top: 2%;
+	padding-bottom: 2%;
+}
+.summeryContent p{
+	font-weight: 100;
+	font-size: 13px;
+	color: #4a4a4a;
+}
+.basicInfoOuter{
+	padding-top: 1%;
+	padding-bottom: 1%;
+	text-align: left;
+}
+.basicInfoInner h5{
+  color: #4a4a4a;
+  font-size: 13px;
+  font-weight: 100;
+}
+.basicInfoInner p{
+  color: #4a4a4a; 
+  font-size: 13px;
+  font-weight: 700;
+}
+.addressInfoOuter{
+	padding-top: 1%;
+	padding-bottom: 1%;
+	text-align: left;
+}
+.addressInfoInner h5{
+  color: #4a4a4a;
+  font-size: 13px;
+  font-weight: 100;
+}
+.addressInfoInner p{
+  color: #4a4a4a;
+  font-size: 13px;
+  font-weight: 700;
+}
+.addressInfoInner span{
+  color: #4a4a4a;
+  font-size: 13px;
+  font-weight: 700;
+}
+.Experience-info{
+  margin-bottom: 3%;
+}
+.Experience-info span{
+  color: #4a4a4a;
+  font-size: 13px;
+  font-weight: 700;
+}
+.acadamicinfoOuter{
+   color: #4a4a4a;
+  font-size: 13px;
+  font-weight: 700;
+}
+.basicinfospan{
+  color: #4a4a4a;
+  font-size: 13px;
+  font-weight: 700;
+}
+.academicsTableOuter{
+	padding-top: 2%;
+  padding-bottom: 2%;
+  text-align: center;
+}
+.academicsTable{
+   border: 1px solid #414260 !important; 
+}
+.academicsTable thead{
+  background: #414260;
+  color: #fff;
+  /* font-weight: 100; */
+  border: 1px solid #414260;
+}
+.academicsTable thead tr th{
+  font-weight: 100;
+    font-size: 14px;
+}
+.academicsTable tbody tr td{
+  font-weight: 100;
+    font-size: 13px;
+    color: #414260;
+}
+.skillTableOuter{
+  padding-top: 2%;
+  padding-bottom: 2%;
+  text-align: center;
+}
+.skillTable{
+   border: 1px solid #414260 !important; 
+}
+.skillTable thead{
+  background: #414260;
+  color: #fff;
+  /* font-weight: 100; */
+  border: 1px solid #414260;
+}
+.skillTable thead tr th{
+  font-weight: 100;
+    font-size: 14px;
+}
+.skillTable tbody tr td{
+  font-weight: 100;
+    font-size: 13px;
+    color: #414260;
+}
+/* omkar work Start*/
+.edu-box{
+  width: 80px;
+  height: 80px;
+  /* color: #b2b2b2; */
+  background: #eee;
+  text-align: center;
+  padding-top: 10px;
+  padding-left: 2px;
+  /* border-radius: 100%; */
+  margin-left: 5px;
+  margin-bottom: 10px;
+}
+.university-name{
+  font-size: 14px;
+  line-height: 1.6;
+  letter-spacing: 1px;
+  font-weight: 700;
+  color: #4a4a4a;
+}
+.degree{
+  color: #4a4a4a;
+  font-size: 13px;
+  font-weight: 100;
+  line-height: 1.6;
+  letter-spacing: 1px;
+}
+.company-name{
+  color: #4a4a4a;
+  font-size: 13px;
+  font-weight: 100;
+  line-height: 1.6;
+  letter-spacing: 1px;
+}
+.add-btn{
+  font-size:14px;
+  color: #0084bf;
+  cursor: pointer;
+}
+.college-img{
+  height: 60px;
+}
+.year{
+   color: #4a4a4a;
+  font-size: 13px;
+  font-weight: 100;
+  line-height: 1.6;
+  letter-spacing: 1px;
+}
+.outerPermanentAddress{
+  margin-bottom: 2%;
+}
+/* omkar work end */

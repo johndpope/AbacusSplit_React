@@ -1,0 +1,64 @@
+.tabs-left {
+  border-bottom: none;
+  border-right: 1px solid #ddd;
+}
+
+.tabs-left>li {
+  float: none;
+ margin:0px;
+  
+}
+
+.tabs-left>li.active>a,
+.tabs-left>li.active>a:hover,
+.tabs-left>li.active>a:focus {
+  border-bottom-color: #ddd;
+  border-right-color: transparent;
+  /*background:#f90;*/
+  background:#3c8dbc;
+  border:none;
+  border-radius:0px;
+  margin:0px;
+}
+.nav-tabs>li>a:hover {
+    /* margin-right: 2px; */
+    line-height: 1.42857143;
+    border: 1px solid transparent;
+    /* border-radius: 4px 4px 0 0; */
+}
+.tabs-left>li.active>a::after{content: "";
+    position: absolute;
+    top: 10px;
+    right: -10px;
+    border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  
+  border-left: 10px solid #3c8dbc;
+    display: block;
+    width: 0;
+}
+.nav-tabConf > li.active > a, .nav-tabConf > li.active > a:hover, .nav-tabConf > li.active > a:focus{
+  color: #fff !important;
+}
+.checkOutSettingWrapper,
+.paymentCommissionWrapper{
+margin-top: 3%;
+}
+
+.checkoutTitle{
+    padding-left: 0;
+    font-weight: 600;
+    text-align: center;
+    font-size: 18px;
+    margin-top: -20px;
+}
+.envtSettings{
+    box-shadow: 0 0 4px #695d5d;
+    text-align: center;
+    margin-top: 3%;
+    border-radius: 8px;
+}
+
+.envLabel{
+text-align: left;
+}

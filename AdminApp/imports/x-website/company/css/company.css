@@ -1,0 +1,17 @@
+.empVerification li + li{margin-left: 0px;}
+.empVerification li a,.empVerification li a:hover,.empVerification li a:focus,
+.empVerification li a:active{background-color: #f6f6f7!important;border-radius: 0px;color: #4a4a4a;}
+.empVerification li.active a{background-color: #00b8ff!important; border-radius: 0px!important;}
+.empVerifContent{margin-top: 60px;}
+.employeeVerifTable button{width: 15%!important;}
+.employeeVerifTable table tbody tr td:first-child{padding: 5px;}
+.employeeVerifTable table tbody tr td input{height: 40px;width: 100%;padding: 10px;outline: none;}
+.bulkEmployeeVerif ul li{text-align: left;list-style: disc;}
+.bulkEmployeeImg{height: 90px;}
+.bulkEmployeeImg img{max-height: 100%;}
+.bulkEmployeeContent{margin-bottom: 50px;margin-top: 30px;}
+.bulkEmployeeFile p span, .bulkEmployeeFile p span:hover, .bulkEmployeeFile p span:focus,
+.bulkEmployeeFile p span:active{background-color: #00b8ff;color: #fff;padding: 10px 50px;margin-left: 10px;cursor: pointer;border-radius: 0px;}
+.employeeVerifTable table tbody tr td i.fa-plus{cursor: pointer;}
+.empVerifListTable{margin-top: 30px;}
+.empVerifListTable thead tr{background-color: #00b8ff;color: #fff;}

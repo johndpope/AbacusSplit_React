@@ -1,0 +1,410 @@
+
+.zeroSpace{
+	padding: 0px;
+	margin: 0px;
+}
+
+.serviceInfoColumn{
+  font-size: 14px;
+  padding-top: 2%;
+  color: #4a4a4a;
+  font-weight: 100;
+  line-height: 1.6;
+  letter-spacing: 0.025em;
+}
+.hrhide{
+	opacity: 0;
+}
+
+.serviceInfoDesc{
+	font-size: 14px;
+  padding-top: 2%;
+  color: #4a4a4a;
+  font-weight: 100;
+  line-height: 1.6;
+  letter-spacing: 0.025em;
+  text-align: justify;
+}
+.spaceDiv{
+	padding: 1%;
+}
+.outerServiceBlock{
+   padding-top: 23px;
+    padding-bottom: 23px;
+    background-color: #f0f0f0;
+}
+.servieInnerBlock{
+   padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #fff;
+    font-family: roboto-regular;
+    /*min-height: 372px;*/
+    /*margin-bottom: 15px;*/
+}   
+.servieInnerBlock h1{
+    text-rendering: optimizeLegibility;
+    color: #fff;
+    line-height: 1.6;
+    letter-spacing: 1px;
+    font-size: 20px;
+    font-weight: 700;
+}
+.servicesTypeBlock{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #fff;
+}
+.serviceImage{
+  height: 200px;
+  width: 200px;
+  /*box-shadow: 0px 0px 4px #999;*/
+}
+.outerServiceImage{
+  padding-top: 2%;
+}
+.ServiceProcessButtons{
+    margin-bottom: 30px;
+    height: 40px;
+    border-radius: 0px !important;
+    background-color: #00b8ff;
+    border-color: #00b8ff;
+    color: #fff;
+    transition-property: border-color, color;
+    transition-duration: 0.3s;
+    transition-timing-function:
+    cubic-bezier(0.42,1,0.58,1);
+    transition-delay: initial;
+}
+.ServiceProcessButtons:hover, .ServiceProcessButtons:focus, .ServiceProcessButtons:active {
+    border-radius: 0px;
+    height: 40px;
+    color: #fff;
+    background-color: #00b8ff;
+    border-color: #00b8ff;
+    outline: none;
+}
+.outerButtonDiv{
+	padding-top: 3%;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.invoiceCompanyName h3{
+  text-rendering: optimizeLegibility;
+  color: #4a4a4a;
+  line-height: 1.6;
+  letter-spacing: 1px;
+  font-size: 18px;
+  font-weight: 700;
+}
+.bannerTextFont{
+  text-rendering: optimizeLegibility;
+  color: #4a4a4a;
+  line-height: 1.6;
+  letter-spacing: 1px;
+  font-size: 14px;
+  font-weight: 700;
+}
+.bannerSpanTextFont{
+  font-size: 14px;
+  padding-top: 2%;
+  color: #4a4a4a;
+  font-weight: 100;
+  line-height: 1.6;
+  letter-spacing: 0.025em;
+}
+.bannerInvMar{
+  margin-top: 2%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  border: 1px solid rgba(74, 74, 74, .5);
+}
+.noPadLeftRight{
+  padding-left: 0;
+  padding-right: 0;
+}
+.invoicetitleHeader{
+  text-rendering: optimizeLegibility;
+  color: #4a4a4a;
+  line-height: 1.6;
+  letter-spacing: 1px;
+  font-size: 14px;
+  font-weight: 700;
+  padding-top: 2%;
+/*  border: 1px solid #4a4a4a;*/
+  padding-bottom: 2%;
+} 
+.invoiceValue{
+  font-size: 14px;
+  padding-top: 2%;
+  color: #4a4a4a;
+  font-weight: 100;
+  line-height: 1.6;
+  letter-spacing: 0.025em;
+  padding-top: 2%;
+/*  border: 1px solid #4a4a4a;*/
+  padding-bottom: 2%;
+} 
+ 
+.notDisplay{
+  display: none;
+}
+.requiredAddress{
+  margin-bottom: 3%;
+}
+.addressRadioLabel{
+  color: #4a4a4a;
+  font-size: 13px;
+  font-weight: 700;
+  margin-right: 4%;
+  vertical-align: middle;
+} 
+.OuterexperienceBlock{
+  margin-bottom: 4%;
+}
+.OuterexperienceBlock h5{
+  color: #4a4a4a;
+  font-size: 13px;
+  font-weight: 100;
+} 
+.userImageOnService{
+ height: 180px;
+ width: 180px;  
+}   
+.outeraddresssType{
+  background: #f0f0f0;
+  box-shadow: 0px 0px 2px #f0f0f0;
+}
+
+.invoiceHeader{
+  background-color: #00b8ff;
+  height: 100px;
+  color: #fff;
+  vertical-align: middle;
+}
+
+.invoiceHeaderTitle{
+  font-size: xx-large;
+  
+}
+/*omkar css on invoice*/
+.headerinvoice{
+background: #45b7ff;
+height: auto;
+/* width: 100%; */
+padding: 2%;
+}
+
+.invoicetitle{
+  color: #fff;
+  font-size: 36px;
+  /*padding-top: 20px;*/
+}
+
+.mailtitle{
+  color: #fff;
+  font-size: 14px;
+  /*padding-top: 20px;*/
+}
+
+.addresstitle{
+  color: #fff;
+  font-size: 14px;
+  text-align: justify;
+  /*padding-top: 20px;*/
+}
+.invoicebill{
+  
+  margin-top: 50px;
+}
+.textCenterInvoice{
+	text-align: center;
+}
+.billedto{
+  font-size: 14px;
+  color: #555;
+  /*margin-bottom: 20px;*/
+
+}
+.count{
+  padding-top: 10px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  font-weight: bold;
+}
+.invoicenumber{
+  /*margin-bottom: 40px;*/
+  color: #555;
+  font-size: 14px;
+}
+.invoicetotle{
+  /*margin-left: 80px;*/
+  color: #555;
+  text-align: right;
+}
+.invoicecount{
+  text-align: left;
+}
+.money{
+  color: #45b7ff;
+  font-size: 40px;
+  margin-top: 20px;
+  text-align: right;
+}
+.date{
+/*padding-top: 10px;*/
+font-size: 14px;
+font-weight: bold;
+}
+.clientdetails{
+  font-size: 14px;
+  font-weight: bold;
+}
+.dateofissue{
+  color: #555;
+  font-size: 14px;
+}
+
+.dash{
+  margin-top: 10px;
+  border-bottom: 2px solid #45b7ff;
+
+}
+.dashFirst{
+	margin-top: 20px;
+}
+.tablehead1{
+
+  color: #45b7ff;
+  font-size: 18px;
+}
+.table1{
+  margin-top: 50px;
+}
+.firstrow td{
+  border-bottom: 1px solid #aaa;
+  /*margin-bottom: 20px;*/
+  /*margin-top: 20px;*/
+  padding-bottom: 30px;
+  padding-top: 20px;
+  font-size: 16px;
+  font-weight: bold;
+}
+ .firsthr{
+  border-color: #aaa;
+
+ }
+ .itemdes{
+  font-size: 14px;
+  color: #bbb;  
+ }
+ .amtcount{
+  text-align: right;
+ }
+.subtotal{
+  
+  margin-right: 20px;
+  color: #45b7ff;
+  font-size: 18px;
+  font-weight: bold;
+}
+.subtotlecount{
+  font-size: 16px;
+  font-weight: bold;
+  margin-left: -15px;
+
+}
+.total{
+  margin-top: 20px;
+}
+.textCSN{
+	font-size: 12px;
+	color: #555;
+	font-weight: normal;
+}
+.serviceNm{
+  text-align: left;
+}
+.invoiceQuantity{
+  text-align: center;
+}
+.PaymentGatewayDIv{
+ font-size: 25px;
+  /* height: 300px; */
+  text-align: center;
+  padding-top: 20%;
+  padding-bottom: 20%;
+}
+.inProcessBackground{
+ background: #ffc107; 
+}
+.downloadPdf i{
+   font-size: 20px;
+  cursor: pointer;
+  font-weight: 500;
+}
+.assureidLogoOnReciept{
+  height: 65px;
+  width: 100%;
+}
+.outerRecieptBlock{
+  padding: 2%;
+  box-shadow: 0px 0px 3px #999;
+  margin-top: 2%;
+}
+.outerReportBlock{
+  padding: 2%;
+  box-shadow: 0px 0px 3px #999;
+  margin-top: 2%;
+}
+.downloadReportButton{
+  font-size: 40px; 
+}
+.outerdownloadReportButton{
+  text-align: center;
+}
+.orderInfo{
+  padding-top: 3%; 
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+.outerverificationInfo{
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+.showAddrWrap h4{
+  letter-spacing: 1px;
+}
+.showAddrWrap p {
+  letter-spacing: 1px;
+  font-size: 17px;
+  margin-top: 2%;
+}
+.payrecreg{
+  padding: 0px;
+}
+.noDataInvoiceList{
+  margin-top: 170px;
+}
+@media screen and (max-width: 619px) and (min-width: 320px){
+  .serviceImage{
+    margin-left: 12%;
+  }
+  .viewTitle{
+    padding-left: 3% !important;
+  }
+  .outerrightpaddingForMobile{
+    padding-right: 0;
+  }
+  .invoicetotle{
+    text-align: left;
+  }
+  .money{
+    text-align: left;
+  }
+  .invoicecount,.mailtitle,.clientaddress,.clientbilled{
+    margin-top: 2%;
+  }
+}
+.buypckg{
+  color:blue;
+}

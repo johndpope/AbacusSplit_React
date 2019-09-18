@@ -1,0 +1,78 @@
+.franchisePhoto{
+margin-bottom:45px;
+
+}
+.img-rounded{
+width: 50px;
+margin-left: 30px;
+/* border-color: none!important;*/
+}
+.topPadding{
+padding-top:30px!important;
+}
+.attachdocument{
+/*margin-top:30px!important;*/
+padding-left:10px!important;
+margin-right: 50px;
+}
+.attachdocument1{
+margin-top:30px!important;
+padding-left:10px!important;
+margin-right: 50px;
+}
+.inputText1{
+margin-bottom:40px!important;
+}
+.displayLogo{
+height:40px!important;
+}
+.attachedImagetitle{
+width:100px!important;
+padding:0!important;
+}
+
+
+.floating-label11 {
+position: absolute;
+pointer-events: none;
+left: 20px;
+top: 8px;
+color: #999;
+font-weight: 400;
+font-size: 14px;
+transition: 0.2s ease all;
+}
+
+.inputText2:focus ~ .floating-label11{
+top: -22px;
+font-size: 15px;
+color: #4183D7;
+left: 17px;
+/*font-family: Poppins-Regular;*/
+font-weight: bold;
+display: block;
+padding: 0px;
+overflow: hidden;
+text-overflow: ellipsis;
+white-space: nowrap;
+display: inline-block;
+width: 85%;
+}
+.searchTableBoxAlignSETT1{
+  margin-top:25px!important;
+}
+.formTable{
+  overflow-y: auto;
+}
+.centertextalign{
+  text-align: center!important;
+}
+.boxWrapDashboard{
+	padding: 0px;
+}
+.boxWrapDashboard h4{
+	color: #222 ;
+}
+.tableHeader20{
+	font-size: 11px;
+}

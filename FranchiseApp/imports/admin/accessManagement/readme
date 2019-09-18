@@ -1,0 +1,49 @@
+steps of using Access Management
+
+1) Add Below roles First (following roles must be first before any role)
+
+	* Anonymous User
+	* Authenticated User
+	* Admin
+	* Add your another roles
+
+2) In your component add below code.
+
+	this.state={
+		facilityPermission : 'waitingforResult',
+	}
+
+//------------------- This method check wheather you access page or not (Simply return true or false)----------------//
+
+	componentWillMount(){
+  		 Meteor.call("isAuthenticated","ModuleName","FacilityName",(err,res)=>{
+			if(err){
+				console.log(err);
+			}else{
+				this.setState({
+					 facilityPermission : res,
+				});
+			}
+		});
+  	}
+
+// --------------------- chnage bellow html code according to your design or file path -----------------//
+  	render(){
+  		if(this.state.facilityPermission != 'waitingforResult' && this.state.facilityPermission == true){
+  		return(
+  			your html code
+  		);
+  		}else if (this.state.facilityPermission == false ){
+				  	FlowRouter.go('/noAccesss')
+			  }else if(this.state.facilityPermission == "waitingforResult"){
+			  	return(<div className="col-lg-12 col-md-12 col-sm-12 waitingResLoadingWrap">
+				   <img src="/images/loading1.gif" alt="loading"/>
+				</div>);
+			  }else{ 
+			  return (
+			  	<div className="col-lg-12 col-md-12 col-sm-12 waitingResLoadingWrap">
+				   <h3>You dont have access. Please <a href="/admin/AssignPermissionstoModules/ShowAll">click here </a> to assign permission</h3>
+				</div>
+			  	);
+			}
+  	}

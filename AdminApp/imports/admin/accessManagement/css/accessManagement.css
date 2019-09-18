@@ -1,0 +1,103 @@
+.AMWrap, .AM-WrapMain{
+	border: 1px solid #ddd;
+	/*margin-top: 30px;*/
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+.AM-WrapMain{
+	margin-top: 110px;
+}
+.AM-btn-Wrap{
+	text-align: right;
+}
+.AM-btn-Wrap button{
+	border-radius: 0px !important;
+}
+.moduleNameAM{
+	color: #666;
+}
+.nestedTable{
+	width:100%;
+	border-bottom: 1px solid #eee;
+}
+.nestedTable tr td{
+	padding-top: 2px;
+	padding-bottom: 2px;
+	text-align: left;
+    padding-left: 15px;
+}
+.nestedTable:last-child{
+	border-bottom: none !important;
+}
+.AMFTableTD{
+	padding: 0px 0px 0px 5px !important;
+	text-align: left;
+}
+.facilityInnerTD{
+	padding: 5px;
+}
+.AMCheckbox{
+  margin-top: 4.5px !important;
+  margin-bottom: -6px !important;
+}
+.moduleName-AMF{
+	vertical-align: middle !important;
+}
+.F-DeleteBtn{
+	text-align: right;
+}
+
+.moduleNMWrap{
+	padding: 0px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	font-size: 18px;
+}
+.AMFTable{
+	padding: 0px;
+}
+.rolesList-AM{
+	margin-top: 20px;
+}
+.AMRoleSelect{
+	text-align: center;
+}
+.AMTableTd{
+	text-align: left;
+	font-size: 16px;
+	font-weight: bold;
+	padding-left: 10px !important;
+}
+.nestedTable-AMTable{
+	font-weight: normal;
+	font-size: 14px;
+}
+.srNoAMTable{
+	text-align: center;
+	vertical-align: middle !important;
+}
+.nestedTable-AMTable tr td{
+	vertical-align: middle !important;
+}
+.tableHeader-AM tr th{
+	text-align: center;
+}
+.tableHeader-AM tr th:nth-of-type(2){
+	text-align: left;
+}
+.addModuleOption{
+	color: #f44;
+}
+.AM-modal-body{
+	height: 135px;
+}
+.hiddenCheckbox-AM{
+	opacity: 0;
+}
+.addModuleIcon{
+	float: right;
+    margin-top: -23px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #3c8dbc;
+}

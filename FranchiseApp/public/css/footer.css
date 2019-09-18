@@ -1,0 +1,84 @@
+.nurseryFooterWrapper{
+    background-image: url("/images/nurseryworld/footer.jpg");
+    position: relative;
+    bottom: 0;
+    padding: 0;
+    left: 0;
+    z-index: 0;
+    display: table;
+    filter : brightness(100%);
+    width: 100%;
+    height: auto;
+    /*color: #787675;*/
+    color: #fff;
+    background-position: center;
+    background-size: cover;
+}
+
+.footerLogo{
+    margin-bottom: 71px;
+    padding-top: 7%;
+}
+.footerBlockHead{
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 19px;
+    padding-bottom: 4%;
+}
+
+.footerBlock .fa{
+    font-size: 20px;
+    padding-right: 3%;
+}
+
+.footerBlockSpan{
+    /*color: #969c9e;*/
+    color: #fff;
+    padding-bottom: 3%;
+    font-size: 17px;
+}
+.twittertext,
+.footerBlockHead .fa{
+    /*color: #787675!important;*/
+    color: #fff!important;
+
+}
+.footerBlockHead a:hover{
+    color: #fff!important;
+}
+.twitter a{
+    /*color: #969c9e;*/
+    color:#86bc42;
+}
+
+.galleryImg{
+   height: 73px;
+    width: auto;
+}
+.galleryImgOuter{
+    padding: 2% !important;
+    margin-bottom: 1px;
+}
+.bottomBlock{
+    background: #0d1314;
+    margin-top: 8%;
+    height: 74px;
+}
+.bottomLeft3{
+    font-size: 16px;
+    padding-top: 2%;
+    color: rgba(255, 255, 255, .1);
+    padding-left: 3%;
+}
+.bottomRight{
+    padding-top: 2%;
+    font-size: 17px;
+    color: rgba(255, 255, 255, .1);
+    padding-left: 3%;
+}
+.faclass{
+    color: #fff;
+}
+.faclass:hover{
+    color: #86bc42;
+}

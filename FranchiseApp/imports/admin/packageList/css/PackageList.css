@@ -1,0 +1,180 @@
+.packagebox{
+	height:auto;
+	/*background:#f0f;*/
+	padding:30px;
+}
+.packageboxbody{
+	/*background:#111!important;*/
+	/*background:radial-gradient(circle farthest-corner at center, #333 -7%, #777, #333);*/
+	/*background:#ecf0f5!important;*/
+	min-height:400px;
+}
+.singlepackagebox{
+	height:auto;
+	background:#f190bb;
+	/*background:radial-gradient(circle farthest-corner at top, #fafafa -30%, #001630, #000);*/
+	color:white;
+	/*background-image:url("/images/bluegray1.jpeg");
+	background-size: 100% 100%;*/
+	color:#000;
+	padding-bottom:10px;
+	margin-top: 30px;
+	box-shadow: 0 9px 16px rgba(0,0,0,0.5);
+	padding-left: 0px;
+	padding-right: 0px;
+	/*box-shadow:  0 1px 5px rgba(0,0,0,0.6), 0 0 50px rgba(0,0,0,0.6) inset;*/
+	/*box-shadow: 0px 0px 15px  #fff;*/
+}
+.PackageCheckbox{
+	position: absolute;
+    right: -8px;
+    margin-top: 0px;
+}
+.pckginfo{
+	margin-top: 10px;
+}
+.pckginfobox{
+	background:#fff;
+	text-align:center;
+	/*color:#999;*/
+	border:1px solid #777;
+}
+.pckginfoboxtext{
+	color:#333;
+	font-size:10px!important;
+	font-family:poppins;
+	font-weight: bold;
+}
+.pckgtitle{
+	/*position: absolute;*/
+	margin-top: 2px;
+	font-size:16px!important;
+	font-family:poppins;
+
+}
+.pckginfobox1{
+	background:#85C1E9  ;
+	/*background:#001630;*/
+	text-align:center;
+	/*color:#999;*/
+	border:1px solid #777;
+}
+.pckginfoboxtext1{
+	color:#fff;
+	font-size:10px!important;
+	font-family:poppins;
+	font-weight: bold;
+}
+.bypackagebtn{
+	/*height:150px;*/
+	/*border-radius:5px;*/
+	/*background-image:url("/images/bluegray1.jpeg");*/
+	background-size: 100% 100%;
+	background-color: #2980B9;
+	/*background: linear-gradient(to bottom, #0099ff 0%, #00ffff 100%);*/
+	/*background:#505153;*/
+	color:white!important;
+	/*background-image:url("/images/pckg3.jpeg");
+	background-size: 100% 100%;*/
+	/*color:#000;*/
+	padding:10px;
+	margin-top: 20px;
+	box-shadow: 0px 0px 12px  #fff;
+}
+.boldtextofcost{
+	font-weight:bold;
+}
+.bypackagebtn:hover{
+	color:white!important;
+}
+.packagefontsize{
+	font-size:13px;
+	/*padding:0!important;*/
+	font-family:sans-serif;
+	color:white;
+}
+/*.singlepackagebox:hover{
+	cursor:pointer;
+	
+}*/
+.selectpckgicon{
+	font-size:25px;
+	font-color:#333;
+	
+}
+.selectpckgicongreen{
+	color:white!important;
+	background: linear-gradient(to bottom, #00ff00 0%, #00ff00 100%);
+	font-size:25px;
+	height: 22px;
+    border-radius: 4px;
+    /*border-color:none;*/
+	
+}
+.whitetext{
+	/*color:#333;*/
+	
+	text-align: center;
+}
+.priceLabel{
+	color:#ea3771!important;
+	text-align: center;
+}
+.packagelabel{
+	margin-top: 2px;
+}
+.boldtextofcost h4{
+	color:#ea3771!important;
+}
+.showBox{
+	opacity: 1;
+	margin-top: 150px;
+}
+.effect{
+		margin-top: 0px;
+		opacity: 1;
+		transition: all ease-in-out 0.6s;
+}
+.effect1{
+		margin-top: 0px;
+		opacity: 1;
+		transition: all ease-in-out 0.6s;
+}
+.effect2{
+		margin-top: 0px;
+		opacity: 1;
+		transition: all ease-in-out 0.6s;
+		transition-delay: 0.2s;
+}
+.effect3{
+		margin-top: 0px;
+		opacity: 1;
+		transition: all ease-in-out 0.6s;
+		transition-delay: 0.4s;
+}
+.effect4{
+		margin-top: 0px;
+		opacity: 1;
+		transition: all ease-in-out 0.6s;
+		transition-delay: 0.6s;
+}
+.examPageWrapbtn{
+	padding-bottom:20px;
+}
+.downloadlogo{
+   color:white;
+   font-size:20px;
+}
+.bypackagebtnWrap{
+	text-align: center;
+	margin-right: 15px;
+}
+.pckgDescLink{
+	color:blue!important;
+}
+.packageDescPara{
+	color:#555!important;
+}
+.packageDescParaRed{
+	color:red!important;
+}

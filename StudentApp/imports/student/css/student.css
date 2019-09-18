@@ -1,0 +1,321 @@
+.outerexambox{
+	background:rgba(255,255,255,1);
+	min-height: 450px;
+	padding:20px;
+	border: 10px solid #F9E79F;
+}
+.examdetail{
+	font-size: 40px;
+    font-weight: bold;
+   
+}
+.examdetailsubtitles{
+	font-size: 18px;
+    font-weight: bold;
+   
+}
+.examdetailsubtitles1{
+	font-size: 15px;
+    font-weight: bold;
+   
+}
+.examdate{
+	color:red;
+}
+.examtitles{
+	 color: #777 ;
+	 /*color: #5DADE2 ;*/
+}
+.orange{
+	color:#F5B041
+}
+.examlogo{
+	height:40px;
+}
+/*.examdetailbox{
+	margin-top:15px;
+}*/
+.paybtn{
+	margin-top:15px;
+	margin-left:10px;
+}
+.green{
+	color:#27AE60;
+}
+.abacustitle{
+	color:#333;
+}
+.abacussubtitle{
+	
+	font-size:30px!important;
+}
+.blue{
+	color:blue;
+}
+.pckgtitle1{
+	color:#333;
+	font-size: 15px;
+}
+.pckgboxlist{
+	
+}
+.zeropadding{
+	padding:0!important;
+}
+.singlepackagebox1{
+	height:50px;
+}
+.smallbx{
+	background:yellow;
+	margin-bottom:5px;
+}
+.smallfont{
+	font-size: 10px;
+}
+/*.titlepaddingzero{
+	padding-left:0!important;
+}*/
+.examCatWrap{
+	padding: 0px !important;
+}
+.outerbox{
+	border:1px solid #888;
+	border-radius:3px;
+	padding:10px;
+}
+.smallboxpckg{
+
+	padding-top:6!important;
+	padding-bottom:0!important;
+	padding-left:0!important;
+	padding-right:0!important;
+    height: auto;
+    /*padding-top: 6px;*/
+	border:2px solid #cd6422;
+	border-radius:5px;
+	margin-bottom:5px;
+	background:#fff;
+	/*background:#F9E79F;*/
+	color:#333;
+	font-weight: bold;
+}
+.smallboxpckg1{
+	padding-top:6!important;
+	padding-bottom:0!important;
+	padding-left:1!important;
+	padding-right:0!important;
+    height: auto;
+    padding-top: 6px;
+	border:2px solid #cd6422;
+	border-radius:5px;
+	margin-bottom:5px;
+	background:#fff;
+	/*background:#F9E79F;*/
+	color:#333;
+	font-weight: bold;
+}
+.smallboxpckg1{
+	padding-left:4!important;
+}
+.boxlistpadding{
+	padding-left: 28px;
+    padding-right: 28px;
+    /*margin-top:12px;*/
+}
+.outerboxpadding{
+	padding:5px!important;
+	text-align: center;
+}
+.boldfont{
+	font-weight: bold;
+	padding:0px!important;
+}
+.startlink{
+	color:blue;
+	font-size: 12px!important
+}
+.paddingnone{
+	padding:0!important;
+}
+.scrollbar{
+	height: 110px;
+    overflow-y: auto;
+    margin-top:10px;
+}
+.ACTit{
+	font-weight: bold !important;
+	font-size: 18px; 
+}
+.rfoac{
+	text-align: center;
+}
+.imgLogoWrapReg > img{
+	margin: auto;
+	margin-bottom: 10px;
+}
+.fontstyle{
+font-family: sans-serif;
+}
+
+
+.receiptBtn a{
+	text-decoration: none;
+    background: #3c8dbc;
+    padding: 2px 5px;
+    color: #fff;
+    border-radius: 3px;
+    font-size: 16px !important;
+    opacity: 0.7;
+}
+.compReceipt, .packageReceipt{
+	text-align: right;
+    font-size: 14px;
+    color: #999;
+    margin-top: 2px;
+    padding-right: 0px;
+}
+.studentdashboardtoppadding{
+	padding-top:14%;
+}
+.clickhereclr{
+	color: #3c8dbc
+}
+.franchisedis{
+	font-size: 15px;
+    font-weight: bold;
+}
+.docattachsubmit{
+    margin-right: 20px;
+}
+.receiptType{
+	text-align: center;
+}
+.studentdashboardtoppadding{
+	padding-top:14%;
+
+}
+.boxlistpadding{
+	height:140px;
+	overflow-y: hidden;
+}
+.boxlistpadding:hover{
+	height:140px;
+	overflow-y: auto;
+}
+blink{
+	animation: blinker 1s linear infinite;
+	}
+	@keyframes blinker {  
+	50% { opacity: 0.2; }
+}
+.studentEmailText{
+	margin-left:20px;
+}
+.imageUploadLabel{
+	text-align: right;
+}
+.imageSize{
+	font-size: 12px!important;
+	padding-right: 35px;
+}
+.imageSize1{
+	padding-right: 85px;
+}
+.genderLabel{
+	font-size: 13px!important;
+	color: #333!important;
+	margin-left:20px!important;
+}
+.genderFemaleLabel{
+	font-size: 13px!important;
+	color: #333!important;
+}
+.franchiseTableWrap{
+	height: 260px;
+    overflow-y: auto;
+}
+.studProfileTitSec{
+	text-align: left !important;
+}
+.bgmonkeyspace{
+	padding:0px 25px;
+}
+.paymentBtnList{
+	padding: 4px 10px;
+    font-size: 12px;
+    font-weight: bold;
+    margin-right: 5px;
+}
+.studentCashPaymentModal{
+	/*padding:20px;*/
+}
+.examtitlecolor{
+	color:#1d109d!important;
+}
+.attemptedTd{
+	background:#4BB543;
+}
+.tdWhiteText{
+	color:white!important;	
+}
+.nullPadding{
+	padding:0!important;
+	font-size:14px!important;
+}
+.dashboardPckgDesc{
+	text-align: left!important;
+}
+.freePPaper{
+	padding-left:0!important;
+	padding-right:0!important;
+	height:20px;
+}
+.pEListTableScroll{
+	/*overflow-x: hidden;*/
+	height: 60px!important;
+}
+.multiExamLeft{
+	margin-top:25%;
+}
+.crslDiv{
+	height:auto;
+	padding-left:33px!important;
+}
+.startmultiexambtn{
+	font-size:11px!important;
+	margin-top:0px!important;
+}
+.startmultiexambtn1{
+	font-size:13px!important;
+}
+.allExamlink{
+padding-left:35px!important;
+}
+.tabletxtwrap{
+	word-break: break-all!important;
+}
+.netspeedimgbrwse{
+	font-size:14px!important;
+}
+.netspeedtext{
+	margin-top:150px;
+}
+.speedTitle{
+	text-align: right;
+}
+.speedContent{
+	text-align: left;
+}
+.speedtextcolor{
+	color: #555!important;
+}
+.adminContact{
+	color:blue;
+}
+.studentblck{
+	margin-top:40px;
+}
+.netspeedgif{
+	height:500px!important;
+	width:800px!important;
+}
